@@ -1,21 +1,21 @@
 <block>
-  <name>Aoa spectrum sink</name>
+  <name>Angle Of Arrival Sink</name>
   <key>myBlocks_aoa_spectrum_sink</key>
   <category>[MYBLOCKS]</category>
   <import>import myBlocks</import>
   <make>myBlocks.aoa_spectrum_sink($vlen, $array, $fc, $treshold)</make>
   <param>
-    <name>Vlen</name>
+    <name>Vector Len</name>
     <key>vlen</key>
     <type>raw</type>
   </param>
   <param>
-    <name>Array</name>
+    <name>Antenna Array</name>
     <key>array</key>
     <type>real_vector</type>
   </param>
   <param>
-    <name>Fc</name>
+    <name>Center Freq.</name>
     <key>fc</key>
     <type>float</type>
   </param>
@@ -25,7 +25,7 @@
     <type>float</type>
   </param>
   <param>
-    <name>Num_inputs</name>
+    <name>Num. Of Inputs</name>
     <key>num_inputs</key>
     <value>2</value>
     <type>int</type>

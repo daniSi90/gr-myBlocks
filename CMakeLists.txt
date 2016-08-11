@@ -125,7 +125,7 @@ find_package(Doxygen)
 set(GR_REQUIRED_COMPONENTS RUNTIME)
 find_package(Gnuradio "3.7.2" REQUIRED)
 find_package(Qt4 4.2.0 COMPONENTS QtCore QtGui)
-find_package(Qwt 6.0.0)
+find_package(Qwt 5.0.0)
 list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake/Modules)
 include(GrVersion)
 

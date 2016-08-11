@@ -58,12 +58,6 @@ namespace gr {
 
       // Spremenljivke za plotanje
       d_interval = 0;
-      d_xlabel = "Angle";
-      d_ylabel = "Ratio";
-      d_label = "";
-      //d_axis_x = 0;
-      //d_axis_y = 0;
-      //d_axis_z = 0;
       d_autoscale_z = false;
       d_buffer.resize(0);
     
@@ -93,7 +87,7 @@ namespace gr {
       }
       
       // Set QWT plot widget
-      d_main_gui = new spectrogram_plot(d_interval, d_vlen, &d_buffer, d_xlabel, d_ylabel, d_label, d_axis_x, d_axis_y, d_axis_z, d_autoscale_z);
+      d_main_gui = new spectrogram_plot(d_interval, &d_buffer);
       d_main_gui->show();
     }
 
@@ -167,16 +161,6 @@ namespace gr {
         Z_f(i) = -10 * log10(Z(0));
         d_buffer.push_back(Z_f(i));
       }
-
-      //for(int i=0; i<d_buffer.size(); ++i)
-      //std::cout << d_buffer.at(i) << ' ';
-      //std::cout << "OK6" << std::endl;
-      //Z_f.print("Angle:");
-      
-      // Copy data to shared buffer with GUI
-
-      //memcpy(&d_buffer[0], in[0], sizeof(float)*d_vlen);
-      
 
       // Tell runtime system how many output items we produced.
       return noutput_items;

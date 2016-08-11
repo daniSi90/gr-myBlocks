@@ -53,8 +53,6 @@ namespace gr {
       QApplication *d_qApplication;
       
       int d_interval;
-      std::string d_xlabel, d_ylabel, d_label;
-      std::vector<float> d_axis_x, d_axis_y, d_axis_z;
       std::vector<float> d_buffer;
       
       bool d_autoscale_z;
