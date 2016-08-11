@@ -1,0 +1,2949 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCustomPlot" kind="class" prot="public">
+    <compoundname>QCustomPlot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7" prot="public" static="no">
+        <name>LayerInsertMode</name>
+        <enumvalue id="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7aee39cf650cd24e68552da0b697ce4a93" prot="public">
+          <name>limBelow</name>
+          <briefdescription>
+<para>Layer is inserted below other layer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41" prot="public">
+          <name>limAbove</name>
+          <briefdescription>
+<para>Layer is inserted above other layer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines how a layer should be inserted relative to an other layer.</para><para><simplesect kind="see"><para><ref refid="classQCustomPlot_1ad5255393df078448bb6ac83fa5db5f52" kindref="member">addLayer</ref>, <ref refid="classQCustomPlot_1ae896140beff19424e9e9e02d6e331104" kindref="member">moveLayer</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1700" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1700" bodyend="1702"/>
+      </memberdef>
+      <memberdef kind="enum" id="classQCustomPlot_1a45d61392d13042e712a956d27762aa39" prot="public" static="no">
+        <name>RefreshPriority</name>
+        <enumvalue id="classQCustomPlot_1a45d61392d13042e712a956d27762aa39a0d4831572370d871f2b7cb88806bac59" prot="public">
+          <name>rpImmediate</name>
+          <briefdescription>
+<para>The <ref refid="classQCustomPlot" kindref="compound">QCustomPlot</ref> surface is immediately refreshed, by calling QWidget::repaint() after the replot. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCustomPlot_1a45d61392d13042e712a956d27762aa39aaaae083a19bc668597bf0f86e000f798" prot="public">
+          <name>rpQueued</name>
+          <briefdescription>
+<para>Queues the refresh such that it is performed at a slightly delayed point in time after the replot, by calling QWidget::update() after the replot. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCustomPlot_1a45d61392d13042e712a956d27762aa39adfa1f2387617168d9299f4c8ad15b332" prot="public">
+          <name>rpHint</name>
+          <briefdescription>
+<para>Whether to use immediate repaint or queued update depends on whether the plotting hint <ref refid="namespaceQCP_1a5400e5fcb9528d92002ddb938c1f4ef4aa3090dafa0e0f9a28c579c79d6c2d283" kindref="member">QCP::phForceRepaint</ref> is set, see <ref refid="classQCustomPlot_1a94a33cbdadbbac5934843508bcfc210d" kindref="member">setPlottingHints</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines with what timing the <ref refid="classQCustomPlot" kindref="compound">QCustomPlot</ref> surface is refreshed after a replot.</para><para><simplesect kind="see"><para><ref refid="classQCustomPlot_1ab6f36fac37d020fc19efca3a92c01b2b" kindref="member">replot</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1710" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1710" bodyend="1713"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classQCustomPlot_1a968b5ac86c181a49bba78c2b62a80cb3" prot="public" static="no" mutable="no">
+        <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis* QCustomPlot::xAxis</definition>
+        <argsstring></argsstring>
+        <name>xAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1819" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1af6fea5679725b152c14facd920b19367" prot="public" static="no" mutable="no">
+        <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis * QCustomPlot::yAxis</definition>
+        <argsstring></argsstring>
+        <name>yAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1819" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ada41599f22cad901c030f3dcbdd82fd9" prot="public" static="no" mutable="no">
+        <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis * QCustomPlot::xAxis2</definition>
+        <argsstring></argsstring>
+        <name>xAxis2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1819" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1af13fdc5bce7d0fabd640f13ba805c0b7" prot="public" static="no" mutable="no">
+        <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis * QCustomPlot::yAxis2</definition>
+        <argsstring></argsstring>
+        <name>yAxis2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1819" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a73da53368aa4c2db3d874cf0db50d140" prot="public" static="no" mutable="no">
+        <type><ref refid="classQCPLegend" kindref="compound">QCPLegend</ref> *</type>
+        <definition>QCPLegend* QCustomPlot::legend</definition>
+        <argsstring></argsstring>
+        <name>legend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1820" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1820" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQCustomPlot_1ac0a7c38a715526c257cff95774f83ab6" prot="protected" static="no" mutable="no">
+        <type>QRect</type>
+        <definition>QRect QCustomPlot::mViewport</definition>
+        <argsstring></argsstring>
+        <name>mViewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1846" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ac97298756882a0eecd98151679850ac1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPLayoutGrid" kindref="compound">QCPLayoutGrid</ref> *</type>
+        <definition>QCPLayoutGrid* QCustomPlot::mPlotLayout</definition>
+        <argsstring></argsstring>
+        <name>mPlotLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1847" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1aaf3ea6a4cb04d35a149cc9a0cdac3394" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCustomPlot::mAutoAddPlottableToLegend</definition>
+        <argsstring></argsstring>
+        <name>mAutoAddPlottableToLegend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1848" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a62bf8e4e7f8d23fc1e9301ba0148269f" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> * &gt;</type>
+        <definition>QList&lt;QCPAbstractPlottable*&gt; QCustomPlot::mPlottables</definition>
+        <argsstring></argsstring>
+        <name>mPlottables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1849" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1adaf8d407d72a725169d7dbed2ee386bb" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> * &gt;</type>
+        <definition>QList&lt;QCPGraph*&gt; QCustomPlot::mGraphs</definition>
+        <argsstring></argsstring>
+        <name>mGraphs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1850" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a6a93905372326e31e98d6c3bc8953ec8" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> * &gt;</type>
+        <definition>QList&lt;QCPAbstractItem*&gt; QCustomPlot::mItems</definition>
+        <argsstring></argsstring>
+        <name>mItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1851" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a72ee313041b873d76c198793ce7e6c37" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> * &gt;</type>
+        <definition>QList&lt;QCPLayer*&gt; QCustomPlot::mLayers</definition>
+        <argsstring></argsstring>
+        <name>mLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1852" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1aa333200629256830e273873b582a5524" prot="protected" static="no" mutable="no">
+        <type>QCP::AntialiasedElements</type>
+        <definition>QCP::AntialiasedElements QCustomPlot::mAntialiasedElements</definition>
+        <argsstring></argsstring>
+        <name>mAntialiasedElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1853" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a2b6ebcad00a90ba07f146cefcd4293da" prot="protected" static="no" mutable="no">
+        <type>QCP::AntialiasedElements</type>
+        <definition>QCP::AntialiasedElements QCustomPlot::mNotAntialiasedElements</definition>
+        <argsstring></argsstring>
+        <name>mNotAntialiasedElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1853" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ad717377ceba7493b4b32f0bcbbdf1895" prot="protected" static="no" mutable="no">
+        <type>QCP::Interactions</type>
+        <definition>QCP::Interactions QCustomPlot::mInteractions</definition>
+        <argsstring></argsstring>
+        <name>mInteractions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1854" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1abc36e12dd0482117ad810a800c847722" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QCustomPlot::mSelectionTolerance</definition>
+        <argsstring></argsstring>
+        <name>mSelectionTolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1855" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ac83df968435f6b8ec79f2993ab9124e8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCustomPlot::mNoAntialiasingOnDrag</definition>
+        <argsstring></argsstring>
+        <name>mNoAntialiasingOnDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1856" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1856" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a3aef5de4ac012178e3293248e9c63737" prot="protected" static="no" mutable="no">
+        <type>QBrush</type>
+        <definition>QBrush QCustomPlot::mBackgroundBrush</definition>
+        <argsstring></argsstring>
+        <name>mBackgroundBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1857" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ae8f4677399324a78c5f8dbfb95a34f90" prot="protected" static="no" mutable="no">
+        <type>QPixmap</type>
+        <definition>QPixmap QCustomPlot::mBackgroundPixmap</definition>
+        <argsstring></argsstring>
+        <name>mBackgroundPixmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1858" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a081bf046501d52642dc6d7e3bdb97d57" prot="protected" static="no" mutable="no">
+        <type>QPixmap</type>
+        <definition>QPixmap QCustomPlot::mScaledBackgroundPixmap</definition>
+        <argsstring></argsstring>
+        <name>mScaledBackgroundPixmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1859" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a62fe584b20680b1b2e1c7efb5c5416a5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCustomPlot::mBackgroundScaled</definition>
+        <argsstring></argsstring>
+        <name>mBackgroundScaled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1860" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ab82e8a5e3ad6b486f95d6da8bf49e9aa" prot="protected" static="no" mutable="no">
+        <type>Qt::AspectRatioMode</type>
+        <definition>Qt::AspectRatioMode QCustomPlot::mBackgroundScaledMode</definition>
+        <argsstring></argsstring>
+        <name>mBackgroundScaledMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1861" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1aa27569c92e74395af10151357d268628" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+        <definition>QCPLayer* QCustomPlot::mCurrentLayer</definition>
+        <argsstring></argsstring>
+        <name>mCurrentLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1862" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1aa184197a6101a9cc5807469e1d006c9e" prot="protected" static="no" mutable="no">
+        <type>QCP::PlottingHints</type>
+        <definition>QCP::PlottingHints QCustomPlot::mPlottingHints</definition>
+        <argsstring></argsstring>
+        <name>mPlottingHints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1863" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a0e97e701c5671e7e463d2ce0211d0f8a" prot="protected" static="no" mutable="no">
+        <type>Qt::KeyboardModifier</type>
+        <definition>Qt::KeyboardModifier QCustomPlot::mMultiSelectModifier</definition>
+        <argsstring></argsstring>
+        <name>mMultiSelectModifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1864" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a753630df96e0672098d9e88bd41d1913" prot="protected" static="no" mutable="no">
+        <type>QPixmap</type>
+        <definition>QPixmap QCustomPlot::mPaintBuffer</definition>
+        <argsstring></argsstring>
+        <name>mPaintBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1867" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ac57090da95056ae4dd67be67adfa85bd" prot="protected" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint QCustomPlot::mMousePressPos</definition>
+        <argsstring></argsstring>
+        <name>mMousePressPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1868" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1a2f2e8b25e59cf3cf7b15e4767c02e747" prot="protected" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classQCPLayoutElement" kindref="compound">QCPLayoutElement</ref> &gt;</type>
+        <definition>QPointer&lt;QCPLayoutElement&gt; QCustomPlot::mMouseEventElement</definition>
+        <argsstring></argsstring>
+        <name>mMouseEventElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1869" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCustomPlot_1ab30daeca6612c3948afd368dce5f1c39" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCustomPlot::mReplotting</definition>
+        <argsstring></argsstring>
+        <name>mReplotting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1870" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1870" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classQCustomPlot_1a8429035e7adfbd7f05805a6530ad5e3b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class QCPLegend</definition>
+        <argsstring></argsstring>
+        <name>QCPLegend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1893" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1893" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCustomPlot_1af123edeca169ec7a31958a1d714e1a8a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class QCPAxis</definition>
+        <argsstring></argsstring>
+        <name>QCPAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1894" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCustomPlot_1a5dbf96bf7664c1b6fce49063eeea6eef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class QCPLayer</definition>
+        <argsstring></argsstring>
+        <name>QCPLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1895" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCustomPlot_1acbf20ecb140f66c5fd1bc64ae0762990" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class QCPAxisRect</definition>
+        <argsstring></argsstring>
+        <name>QCPAxisRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1896" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1896" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCustomPlot_1a45b99626558651a6428b83972b0b34b8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCustomPlot::QCustomPlot</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>QCustomPlot</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1715" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a6e8fe7a1f7b72f895f787afdb5bb0a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual QCustomPlot::~QCustomPlot</definition>
+        <argsstring>()</argsstring>
+        <name>~QCustomPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1716" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a953ecdbc28018e7e84cb6213ad3d88c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QRect</type>
+        <definition>QRect QCustomPlot::viewport</definition>
+        <argsstring>() const </argsstring>
+        <name>viewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1719" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1719" bodyend="1719"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a4643ddc8249cc4f51725650677c2b779" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPixmap</type>
+        <definition>QPixmap QCustomPlot::background</definition>
+        <argsstring>() const </argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1720" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1720" bodyend="1720"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1af9a6e0fe88e4b8ae5504ee9646abb121" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::backgroundScaled</definition>
+        <argsstring>() const </argsstring>
+        <name>backgroundScaled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1721" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1721" bodyend="1721"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a3394512baf54fbcdc7613ac44a07c3b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Qt::AspectRatioMode</type>
+        <definition>Qt::AspectRatioMode QCustomPlot::backgroundScaledMode</definition>
+        <argsstring>() const </argsstring>
+        <name>backgroundScaledMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1722" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1722" bodyend="1722"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ab12cf82bdc088f25f75fa6c4ead09fcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPLayoutGrid" kindref="compound">QCPLayoutGrid</ref> *</type>
+        <definition>QCPLayoutGrid* QCustomPlot::plotLayout</definition>
+        <argsstring>() const </argsstring>
+        <name>plotLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1723" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1723" bodyend="1723"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a81e954fbb485bb44c609e5707f0067b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QCP::AntialiasedElements</type>
+        <definition>QCP::AntialiasedElements QCustomPlot::antialiasedElements</definition>
+        <argsstring>() const </argsstring>
+        <name>antialiasedElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1724" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1724" bodyend="1724"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a8060cee59757213764382a78d3196189" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QCP::AntialiasedElements</type>
+        <definition>QCP::AntialiasedElements QCustomPlot::notAntialiasedElements</definition>
+        <argsstring>() const </argsstring>
+        <name>notAntialiasedElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1725" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1725" bodyend="1725"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ad1599fc3fd1833b5988f6b89c1f616ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::autoAddPlottableToLegend</definition>
+        <argsstring>() const </argsstring>
+        <name>autoAddPlottableToLegend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1726" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1726" bodyend="1726"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a12401c02b6949a717f5749bb28c62983" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const QCP::Interactions</type>
+        <definition>const QCP::Interactions QCustomPlot::interactions</definition>
+        <argsstring>() const </argsstring>
+        <name>interactions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1727" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1727" bodyend="1727"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a7b738074c75e80070ef6a10263c6cd69" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::selectionTolerance</definition>
+        <argsstring>() const </argsstring>
+        <name>selectionTolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1728" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1728" bodyend="1728"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ae07f2895a34d13a97a10cae4d8e17a36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::noAntialiasingOnDrag</definition>
+        <argsstring>() const </argsstring>
+        <name>noAntialiasingOnDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1729" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1729" bodyend="1729"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a130b55e205697a5288081e9fc11e443e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QCP::PlottingHints</type>
+        <definition>QCP::PlottingHints QCustomPlot::plottingHints</definition>
+        <argsstring>() const </argsstring>
+        <name>plottingHints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1730" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1730" bodyend="1730"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a9b6b1a0fea8da3fda6d5e3d687202877" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Qt::KeyboardModifier</type>
+        <definition>Qt::KeyboardModifier QCustomPlot::multiSelectModifier</definition>
+        <argsstring>() const </argsstring>
+        <name>multiSelectModifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1731" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1731" bodyend="1731"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a3f9bc4b939dd8aaba9339fd09f273fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setViewport</definition>
+        <argsstring>(const QRect &amp;rect)</argsstring>
+        <name>setViewport</name>
+        <param>
+          <type>const QRect &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1734" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a130358592cfca353ff3cf5571b49fb00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setBackground</definition>
+        <argsstring>(const QPixmap &amp;pm)</argsstring>
+        <name>setBackground</name>
+        <param>
+          <type>const QPixmap &amp;</type>
+          <declname>pm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1735" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a8513971d6aa24d8b0d6a68d45b542130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setBackground</definition>
+        <argsstring>(const QPixmap &amp;pm, bool scaled, Qt::AspectRatioMode mode=Qt::KeepAspectRatioByExpanding)</argsstring>
+        <name>setBackground</name>
+        <param>
+          <type>const QPixmap &amp;</type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scaled</declname>
+        </param>
+        <param>
+          <type>Qt::AspectRatioMode</type>
+          <declname>mode</declname>
+          <defval>Qt::KeepAspectRatioByExpanding</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1736" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a8ed256cf467bfa7ba1f9feaae62c3bd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setBackground</definition>
+        <argsstring>(const QBrush &amp;brush)</argsstring>
+        <name>setBackground</name>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1737" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a36f0fa1317325dc7b7efea615ee2de1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setBackgroundScaled</definition>
+        <argsstring>(bool scaled)</argsstring>
+        <name>setBackgroundScaled</name>
+        <param>
+          <type>bool</type>
+          <declname>scaled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1738" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a4c0eb4865b7949f62e1cb97db04a3de0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setBackgroundScaledMode</definition>
+        <argsstring>(Qt::AspectRatioMode mode)</argsstring>
+        <name>setBackgroundScaledMode</name>
+        <param>
+          <type>Qt::AspectRatioMode</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1739" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1af6f91e5eab1be85f67c556e98c3745e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setAntialiasedElements</definition>
+        <argsstring>(const QCP::AntialiasedElements &amp;antialiasedElements)</argsstring>
+        <name>setAntialiasedElements</name>
+        <param>
+          <type>const QCP::AntialiasedElements &amp;</type>
+          <declname>antialiasedElements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1740" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1aeef813bcf7efab8e765f9f87ec454691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setAntialiasedElement</definition>
+        <argsstring>(QCP::AntialiasedElement antialiasedElement, bool enabled=true)</argsstring>
+        <name>setAntialiasedElement</name>
+        <param>
+          <type><ref refid="namespaceQCP_1ae55dbe315d41fe80f29ba88100843a0c" kindref="member">QCP::AntialiasedElement</ref></type>
+          <declname>antialiasedElement</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1741" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ae10d685b5eabea2999fb8775ca173c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setNotAntialiasedElements</definition>
+        <argsstring>(const QCP::AntialiasedElements &amp;notAntialiasedElements)</argsstring>
+        <name>setNotAntialiasedElements</name>
+        <param>
+          <type>const QCP::AntialiasedElements &amp;</type>
+          <declname>notAntialiasedElements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1742" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1afc657938a707c890e449ae89203a076d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setNotAntialiasedElement</definition>
+        <argsstring>(QCP::AntialiasedElement notAntialiasedElement, bool enabled=true)</argsstring>
+        <name>setNotAntialiasedElement</name>
+        <param>
+          <type><ref refid="namespaceQCP_1ae55dbe315d41fe80f29ba88100843a0c" kindref="member">QCP::AntialiasedElement</ref></type>
+          <declname>notAntialiasedElement</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1743" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ad8858410c2db47b7104040a3aa61c3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setAutoAddPlottableToLegend</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>setAutoAddPlottableToLegend</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1744" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a5ee1e2f6ae27419deca53e75907c27e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setInteractions</definition>
+        <argsstring>(const QCP::Interactions &amp;interactions)</argsstring>
+        <name>setInteractions</name>
+        <param>
+          <type>const QCP::Interactions &amp;</type>
+          <declname>interactions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1745" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a422bf1bc6d56dac75a3d805d9a65902c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setInteraction</definition>
+        <argsstring>(const QCP::Interaction &amp;interaction, bool enabled=true)</argsstring>
+        <name>setInteraction</name>
+        <param>
+          <type>const <ref refid="namespaceQCP_1a2ad6bb6281c7c2d593d4277b44c2b037" kindref="member">QCP::Interaction</ref> &amp;</type>
+          <declname>interaction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1746" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a4dc31241d7b09680950e19e5f971ed93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setSelectionTolerance</definition>
+        <argsstring>(int pixels)</argsstring>
+        <name>setSelectionTolerance</name>
+        <param>
+          <type>int</type>
+          <declname>pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1747" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a775bdcb6329d44701aeaa6135b0e5265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setNoAntialiasingOnDrag</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setNoAntialiasingOnDrag</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1748" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a94a33cbdadbbac5934843508bcfc210d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setPlottingHints</definition>
+        <argsstring>(const QCP::PlottingHints &amp;hints)</argsstring>
+        <name>setPlottingHints</name>
+        <param>
+          <type>const QCP::PlottingHints &amp;</type>
+          <declname>hints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1749" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a3b7c97bb6c16464e9e15190c07abe9a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setPlottingHint</definition>
+        <argsstring>(QCP::PlottingHint hint, bool enabled=true)</argsstring>
+        <name>setPlottingHint</name>
+        <param>
+          <type><ref refid="namespaceQCP_1a5400e5fcb9528d92002ddb938c1f4ef4" kindref="member">QCP::PlottingHint</ref></type>
+          <declname>hint</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1750" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a8fc96e3b5138a06759a2a90c166df516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::setMultiSelectModifier</definition>
+        <argsstring>(Qt::KeyboardModifier modifier)</argsstring>
+        <name>setMultiSelectModifier</name>
+        <param>
+          <type>Qt::KeyboardModifier</type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1751" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ad4eeafe213dadabff75db0432277f644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+        <definition>QCPAbstractPlottable* QCustomPlot::plottable</definition>
+        <argsstring>(int index)</argsstring>
+        <name>plottable</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1755" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ac47df4ac8bc180c8771083ecb599eaeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+        <definition>QCPAbstractPlottable* QCustomPlot::plottable</definition>
+        <argsstring>()</argsstring>
+        <name>plottable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1756" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ab7ad9174f701f9c6f64e378df77927a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::addPlottable</definition>
+        <argsstring>(QCPAbstractPlottable *plottable)</argsstring>
+        <name>addPlottable</name>
+        <param>
+          <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+          <declname>plottable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1757" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1af3dafd56884208474f311d6226513ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::removePlottable</definition>
+        <argsstring>(QCPAbstractPlottable *plottable)</argsstring>
+        <name>removePlottable</name>
+        <param>
+          <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+          <declname>plottable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1758" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1afc210e0021480f8119bccf37839dbcc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::removePlottable</definition>
+        <argsstring>(int index)</argsstring>
+        <name>removePlottable</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1759" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a9a409bb3201878adb7ffba1c89c4e004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::clearPlottables</definition>
+        <argsstring>()</argsstring>
+        <name>clearPlottables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1760" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a2dbfbf15dc38713f9a1c445a3dd2e989" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::plottableCount</definition>
+        <argsstring>() const </argsstring>
+        <name>plottableCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1761" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a1570cbbeec04f2852ede0ffb9ee92811" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QList&lt; <ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> * &gt;</type>
+        <definition>QList&lt;QCPAbstractPlottable*&gt; QCustomPlot::selectedPlottables</definition>
+        <argsstring>() const </argsstring>
+        <name>selectedPlottables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1762" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1abcdc51f5fa3078f6dd12688bfa64f5ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+        <definition>QCPAbstractPlottable* QCustomPlot::plottableAt</definition>
+        <argsstring>(const QPointF &amp;pos, bool onlySelectable=false) const </argsstring>
+        <name>plottableAt</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>onlySelectable</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1763" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a4fc28914e2ee91aab424b7ce46b6bdf1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::hasPlottable</definition>
+        <argsstring>(QCPAbstractPlottable *plottable) const </argsstring>
+        <name>hasPlottable</name>
+        <param>
+          <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+          <declname>plottable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1764" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a92870be7fd907ded84f97620b0189275" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph* QCustomPlot::graph</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>graph</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1767" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1aa4284024fdbebf141788aa6d5d66d286" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph* QCustomPlot::graph</definition>
+        <argsstring>() const </argsstring>
+        <name>graph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1768" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a81da9c07843d3e2beb1133dadb49acfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph* QCustomPlot::addGraph</definition>
+        <argsstring>(QCPAxis *keyAxis=0, QCPAxis *valueAxis=0)</argsstring>
+        <name>addGraph</name>
+        <param>
+          <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>keyAxis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>valueAxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1769" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a903561be895fb6528a770d66ac5e6713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::removeGraph</definition>
+        <argsstring>(QCPGraph *graph)</argsstring>
+        <name>removeGraph</name>
+        <param>
+          <type><ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1770" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a9554b3d2d5b10c0f884bd4010b6c192c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::removeGraph</definition>
+        <argsstring>(int index)</argsstring>
+        <name>removeGraph</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1771" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ab0f3abff2d2f7df3668b5836f39207fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::clearGraphs</definition>
+        <argsstring>()</argsstring>
+        <name>clearGraphs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1772" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a7d9b4d19114b2fde60f0233eeb0aa682" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::graphCount</definition>
+        <argsstring>() const </argsstring>
+        <name>graphCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1773" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a70f84dc15f70b91c1fb3ff18e03ddaaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QList&lt; <ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> * &gt;</type>
+        <definition>QList&lt;QCPGraph*&gt; QCustomPlot::selectedGraphs</definition>
+        <argsstring>() const </argsstring>
+        <name>selectedGraphs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1774" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a28c5bd1455d407654511bbe5e947916c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+        <definition>QCPAbstractItem* QCustomPlot::item</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>item</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1777" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a49bfcb69640dd36412fd739c77e2e73e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+        <definition>QCPAbstractItem* QCustomPlot::item</definition>
+        <argsstring>() const </argsstring>
+        <name>item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1778" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1aa500620379262321685cb7a7674cbd2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::addItem</definition>
+        <argsstring>(QCPAbstractItem *item)</argsstring>
+        <name>addItem</name>
+        <param>
+          <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1779" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ae04446557292551e8fb6e2c106e1848d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::removeItem</definition>
+        <argsstring>(QCPAbstractItem *item)</argsstring>
+        <name>removeItem</name>
+        <param>
+          <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1780" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1abcfdda3d601c0441cab136137d715dea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::removeItem</definition>
+        <argsstring>(int index)</argsstring>
+        <name>removeItem</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1781" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1abdfd07d4f0591d0cf967f85013fd3645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::clearItems</definition>
+        <argsstring>()</argsstring>
+        <name>clearItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1782" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a6fc860e30df17fd5c46056bf6fe29390" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::itemCount</definition>
+        <argsstring>() const </argsstring>
+        <name>itemCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1783" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ad237a5162acd30d23ce520ae7a8b86cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QList&lt; <ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> * &gt;</type>
+        <definition>QList&lt;QCPAbstractItem*&gt; QCustomPlot::selectedItems</definition>
+        <argsstring>() const </argsstring>
+        <name>selectedItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1784" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a2a57aab52dd449f3c8c1e64394e06ae5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+        <definition>QCPAbstractItem* QCustomPlot::itemAt</definition>
+        <argsstring>(const QPointF &amp;pos, bool onlySelectable=false) const </argsstring>
+        <name>itemAt</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>onlySelectable</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1785" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ab4199c38b03e63a2623c82453fe8add5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::hasItem</definition>
+        <argsstring>(QCPAbstractItem *item) const </argsstring>
+        <name>hasItem</name>
+        <param>
+          <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1786" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a9c760438b60791d601374477beba5534" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+        <definition>QCPLayer* QCustomPlot::layer</definition>
+        <argsstring>(const QString &amp;name) const </argsstring>
+        <name>layer</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1789" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a655094d9553fb31e5220e87df46da736" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+        <definition>QCPLayer* QCustomPlot::layer</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>layer</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1790" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a5ff39b8d1097115a317885567c76d95d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+        <definition>QCPLayer* QCustomPlot::currentLayer</definition>
+        <argsstring>() const </argsstring>
+        <name>currentLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1791" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a73a6dc47c653bb6f8f030abca5a11852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::setCurrentLayer</definition>
+        <argsstring>(const QString &amp;name)</argsstring>
+        <name>setCurrentLayer</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1792" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a23a4d3cadad1a0063c5fe19aac5659e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::setCurrentLayer</definition>
+        <argsstring>(QCPLayer *layer)</argsstring>
+        <name>setCurrentLayer</name>
+        <param>
+          <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1793" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a1b3926884f5bd4bdda1495d8b3c891d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::layerCount</definition>
+        <argsstring>() const </argsstring>
+        <name>layerCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1794" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ad5255393df078448bb6ac83fa5db5f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::addLayer</definition>
+        <argsstring>(const QString &amp;name, QCPLayer *otherLayer=0, LayerInsertMode insertMode=limAbove)</argsstring>
+        <name>addLayer</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+          <declname>otherLayer</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7" kindref="member">LayerInsertMode</ref></type>
+          <declname>insertMode</declname>
+          <defval><ref refid="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41" kindref="member">limAbove</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1795" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a40f75e342c5eaab6a86066a42a0e2a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::removeLayer</definition>
+        <argsstring>(QCPLayer *layer)</argsstring>
+        <name>removeLayer</name>
+        <param>
+          <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1796" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ae896140beff19424e9e9e02d6e331104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::moveLayer</definition>
+        <argsstring>(QCPLayer *layer, QCPLayer *otherLayer, LayerInsertMode insertMode=limAbove)</argsstring>
+        <name>moveLayer</name>
+        <param>
+          <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPLayer" kindref="compound">QCPLayer</ref> *</type>
+          <declname>otherLayer</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7" kindref="member">LayerInsertMode</ref></type>
+          <declname>insertMode</declname>
+          <defval><ref refid="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41" kindref="member">limAbove</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1797" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a340fa24b1607e445cedda9685670ead3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCustomPlot::axisRectCount</definition>
+        <argsstring>() const </argsstring>
+        <name>axisRectCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1800" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ad652a2b97827e95a6939e0838a251249" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAxisRect" kindref="compound">QCPAxisRect</ref> *</type>
+        <definition>QCPAxisRect* QCustomPlot::axisRect</definition>
+        <argsstring>(int index=0) const </argsstring>
+        <name>axisRect</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1801" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a040194871f98aa377fab056a83a24d7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QList&lt; <ref refid="classQCPAxisRect" kindref="compound">QCPAxisRect</ref> * &gt;</type>
+        <definition>QList&lt;QCPAxisRect*&gt; QCustomPlot::axisRects</definition>
+        <argsstring>() const </argsstring>
+        <name>axisRects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1802" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a9e12b616019b4e08fa59a74d8176a5c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPLayoutElement" kindref="compound">QCPLayoutElement</ref> *</type>
+        <definition>QCPLayoutElement* QCustomPlot::layoutElementAt</definition>
+        <argsstring>(const QPointF &amp;pos) const </argsstring>
+        <name>layoutElementAt</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1803" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a8898682337c33b27b42b85218a8d4c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_SLOT void</type>
+        <definition>Q_SLOT void QCustomPlot::rescaleAxes</definition>
+        <argsstring>(bool onlyVisiblePlottables=false)</argsstring>
+        <name>rescaleAxes</name>
+        <param>
+          <type>bool</type>
+          <declname>onlyVisiblePlottables</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1804" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a520f3ebc6527193da2540f2c82439e83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QList&lt; <ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> * &gt;</type>
+        <definition>QList&lt;QCPAxis*&gt; QCustomPlot::selectedAxes</definition>
+        <argsstring>() const </argsstring>
+        <name>selectedAxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1806" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1aafa931a82d7568af2ca51e5f939ff39a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QList&lt; <ref refid="classQCPLegend" kindref="compound">QCPLegend</ref> * &gt;</type>
+        <definition>QList&lt;QCPLegend*&gt; QCustomPlot::selectedLegends</definition>
+        <argsstring>() const </argsstring>
+        <name>selectedLegends</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1807" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a3b2698464e81b0771bdcaeb5bd306886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_SLOT void</type>
+        <definition>Q_SLOT void QCustomPlot::deselectAll</definition>
+        <argsstring>()</argsstring>
+        <name>deselectAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1808" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a632da44c6d94ea8b271eb483b08b5114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::savePdf</definition>
+        <argsstring>(const QString &amp;fileName, bool noCosmeticPen=false, int width=0, int height=0, const QString &amp;pdfCreator=QString(), const QString &amp;pdfTitle=QString())</argsstring>
+        <name>savePdf</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>noCosmeticPen</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>pdfCreator</declname>
+          <defval>QString()</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>pdfTitle</declname>
+          <defval>QString()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1810" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a7636261aff1f6d25c9da749ece3fc8b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::savePng</definition>
+        <argsstring>(const QString &amp;fileName, int width=0, int height=0, double scale=1.0, int quality=-1)</argsstring>
+        <name>savePng</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quality</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1811" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a490c722092d1771e8ce4a7a73dfd84ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::saveJpg</definition>
+        <argsstring>(const QString &amp;fileName, int width=0, int height=0, double scale=1.0, int quality=-1)</argsstring>
+        <name>saveJpg</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quality</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1812" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a6629d9e8e6da4bf18055ee0257fdce9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::saveBmp</definition>
+        <argsstring>(const QString &amp;fileName, int width=0, int height=0, double scale=1.0)</argsstring>
+        <name>saveBmp</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1813" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ab528b84cf92baabe29b1d0ef2f77c93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCustomPlot::saveRastered</definition>
+        <argsstring>(const QString &amp;fileName, int width, int height, double scale, const char *format, int quality=-1)</argsstring>
+        <name>saveRastered</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quality</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1814" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1aabb974d71ce96c137dc04eb6eab844fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QPixmap</type>
+        <definition>QPixmap QCustomPlot::toPixmap</definition>
+        <argsstring>(int width=0, int height=0, double scale=1.0)</argsstring>
+        <name>toPixmap</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1815" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a1be68d5c0f1e086d6374d1340a193fb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::toPainter</definition>
+        <argsstring>(QCPPainter *painter, int width=0, int height=0)</argsstring>
+        <name>toPainter</name>
+        <param>
+          <type><ref refid="classQCPPainter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1816" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ab6f36fac37d020fc19efca3a92c01b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_SLOT void</type>
+        <definition>Q_SLOT void QCustomPlot::replot</definition>
+        <argsstring>(QCustomPlot::RefreshPriority refreshPriority=QCustomPlot::rpHint)</argsstring>
+        <name>replot</name>
+        <param>
+          <type><ref refid="classQCustomPlot_1a45d61392d13042e712a956d27762aa39" kindref="member">QCustomPlot::RefreshPriority</ref></type>
+          <declname>refreshPriority</declname>
+          <defval><ref refid="classQCustomPlot_1a45d61392d13042e712a956d27762aa39adfa1f2387617168d9299f4c8ad15b332" kindref="member">QCustomPlot::rpHint</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1817" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classQCustomPlot_1a9b232142c64fcf273a953ee08e5b90e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::mouseDoubleClick</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseDoubleClick</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1823" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1aca75bf9afb5dd19349c375de2a87a051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::mousePress</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mousePress</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1824" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a742ca4f94688bed2a685fd8a56ce5704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::mouseMove</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseMove</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1825" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1ac8dc0ee6bb98e923c00b4ebafbe6134d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::mouseRelease</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseRelease</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1826" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1ac80a14206f99304a91d2aa55775ec3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::mouseWheel</definition>
+        <argsstring>(QWheelEvent *event)</argsstring>
+        <name>mouseWheel</name>
+        <param>
+          <type>QWheelEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1827" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a57e5efa8a854620e9bf62d31fc139f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::plottableClick</definition>
+        <argsstring>(QCPAbstractPlottable *plottable, QMouseEvent *event)</argsstring>
+        <name>plottableClick</name>
+        <param>
+          <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+          <declname>plottable</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1829" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1af2e6f1cea923dae437681d01ce7d0c31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::plottableDoubleClick</definition>
+        <argsstring>(QCPAbstractPlottable *plottable, QMouseEvent *event)</argsstring>
+        <name>plottableDoubleClick</name>
+        <param>
+          <type><ref refid="classQCPAbstractPlottable" kindref="compound">QCPAbstractPlottable</ref> *</type>
+          <declname>plottable</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1830" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1ae16b51f52d2b7aebbc7e3e74e6ff2e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::itemClick</definition>
+        <argsstring>(QCPAbstractItem *item, QMouseEvent *event)</argsstring>
+        <name>itemClick</name>
+        <param>
+          <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1831" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1ac83aa9f5a3e9bb3efc9cdc763dcd42a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::itemDoubleClick</definition>
+        <argsstring>(QCPAbstractItem *item, QMouseEvent *event)</argsstring>
+        <name>itemDoubleClick</name>
+        <param>
+          <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1832" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1abf635f8b56ab5c16d5de9f358543e82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::axisClick</definition>
+        <argsstring>(QCPAxis *axis, QCPAxis::SelectablePart part, QMouseEvent *event)</argsstring>
+        <name>axisClick</name>
+        <param>
+          <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPAxis_1abee4c7a54c468b1385dfce2c898b115f" kindref="member">QCPAxis::SelectablePart</ref></type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1833" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a6df35357460181a72da3e93d600f5256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::axisDoubleClick</definition>
+        <argsstring>(QCPAxis *axis, QCPAxis::SelectablePart part, QMouseEvent *event)</argsstring>
+        <name>axisDoubleClick</name>
+        <param>
+          <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPAxis_1abee4c7a54c468b1385dfce2c898b115f" kindref="member">QCPAxis::SelectablePart</ref></type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1834" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a79cff0baafbca10a3aaf694d2d3b9ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::legendClick</definition>
+        <argsstring>(QCPLegend *legend, QCPAbstractLegendItem *item, QMouseEvent *event)</argsstring>
+        <name>legendClick</name>
+        <param>
+          <type><ref refid="classQCPLegend" kindref="compound">QCPLegend</ref> *</type>
+          <declname>legend</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPAbstractLegendItem" kindref="compound">QCPAbstractLegendItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1835" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a0250f835c044521df1619b132288bca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::legendDoubleClick</definition>
+        <argsstring>(QCPLegend *legend, QCPAbstractLegendItem *item, QMouseEvent *event)</argsstring>
+        <name>legendDoubleClick</name>
+        <param>
+          <type><ref refid="classQCPLegend" kindref="compound">QCPLegend</ref> *</type>
+          <declname>legend</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPAbstractLegendItem" kindref="compound">QCPAbstractLegendItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1836" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a2137a819e518fee7edd1c0bf5984d8d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::titleClick</definition>
+        <argsstring>(QMouseEvent *event, QCPPlotTitle *title)</argsstring>
+        <name>titleClick</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPPlotTitle" kindref="compound">QCPPlotTitle</ref> *</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1837" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1ad51d65f6abf5edfaeef6e0519a4c1a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::titleDoubleClick</definition>
+        <argsstring>(QMouseEvent *event, QCPPlotTitle *title)</argsstring>
+        <name>titleDoubleClick</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPPlotTitle" kindref="compound">QCPPlotTitle</ref> *</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1838" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a500c64a109bc773c973ad274f2fa4190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::selectionChangedByUser</definition>
+        <argsstring>()</argsstring>
+        <name>selectionChangedByUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1840" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a0cd30e29b73efd6afe096e44bc5956f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::beforeReplot</definition>
+        <argsstring>()</argsstring>
+        <name>beforeReplot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1841" column="1"/>
+      </memberdef>
+      <memberdef kind="signal" id="classQCustomPlot_1a6f4fa624af060bc5919c5f266cf426a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::afterReplot</definition>
+        <argsstring>()</argsstring>
+        <name>afterReplot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1842" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQCustomPlot_1a7c082777b0b0c0811120aac54c21a6de" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QSize</type>
+        <definition>virtual QSize QCustomPlot::minimumSizeHint</definition>
+        <argsstring>() const </argsstring>
+        <name>minimumSizeHint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1873" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a7700ba7bcd90dfe39168cbf2eb906f18" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QSize</type>
+        <definition>virtual QSize QCustomPlot::sizeHint</definition>
+        <argsstring>() const </argsstring>
+        <name>sizeHint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1874" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a5571022934b0eefa3f56fb5cd617fa72" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::paintEvent</definition>
+        <argsstring>(QPaintEvent *event)</argsstring>
+        <name>paintEvent</name>
+        <param>
+          <type>QPaintEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1875" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1ac157bc6fccdf7a1790d191ada90e44ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::resizeEvent</definition>
+        <argsstring>(QResizeEvent *event)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1876" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a3ca763074eb4e330e91a6fc37c152749" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::mouseDoubleClickEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseDoubleClickEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1877" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a42885d04aa26b7b7fbcad2fa6bb4f320" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mousePressEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1878" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a8fddeb996ae87ba305649e12b8ea4858" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseMoveEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1879" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a604c7e4ae673669800ac131239c5725e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::mouseReleaseEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseReleaseEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1880" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a7df4c64bbe54fdd278aba71cc0e96ee7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::wheelEvent</definition>
+        <argsstring>(QWheelEvent *event)</argsstring>
+        <name>wheelEvent</name>
+        <param>
+          <type>QWheelEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1881" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a8f21771005776857a1aaeb76a6d3db7e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::draw</definition>
+        <argsstring>(QCPPainter *painter)</argsstring>
+        <name>draw</name>
+        <param>
+          <type><ref refid="classQCPPainter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1884" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1aca64f782a4b96e12d77836c4a2650ad2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::axisRemoved</definition>
+        <argsstring>(QCPAxis *axis)</argsstring>
+        <name>axisRemoved</name>
+        <param>
+          <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1885" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a281221decdec4a6b5e958d40b77ccef7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCustomPlot::legendRemoved</definition>
+        <argsstring>(QCPLegend *legend)</argsstring>
+        <name>legendRemoved</name>
+        <param>
+          <type><ref refid="classQCPLegend" kindref="compound">QCPLegend</ref> *</type>
+          <declname>legend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1886" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a3117754df3a5638787a6223c7147970f" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::updateLayerIndices</definition>
+        <argsstring>() const </argsstring>
+        <name>updateLayerIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1889" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a5df850030771335824181103608961bf" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPLayerable" kindref="compound">QCPLayerable</ref> *</type>
+        <definition>QCPLayerable* QCustomPlot::layerableAt</definition>
+        <argsstring>(const QPointF &amp;pos, bool onlySelectable, QVariant *selectionDetails=0) const </argsstring>
+        <name>layerableAt</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>onlySelectable</declname>
+        </param>
+        <param>
+          <type>QVariant *</type>
+          <declname>selectionDetails</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1890" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCustomPlot_1a05dd52438cee4353b18c1e53a439008d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCustomPlot::drawBackground</definition>
+        <argsstring>(QCPPainter *painter)</argsstring>
+        <name>drawBackground</name>
+        <param>
+          <type><ref refid="classQCPPainter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1891" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="912">
+        <label>QWidget</label>
+      </node>
+      <node id="911">
+        <label>QCustomPlot</label>
+        <link refid="classQCustomPlot"/>
+        <childnode refid="912" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="927">
+        <label>QCPLayoutInset</label>
+        <link refid="classQCPLayoutInset"/>
+        <childnode refid="918" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="919">
+        <label>QCPLayoutElement</label>
+        <link refid="classQCPLayoutElement"/>
+        <childnode refid="920" relation="public-inheritance">
+        </childnode>
+        <childnode refid="918" relation="usage">
+          <edgelabel>mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="916">
+        <label>QObject</label>
+      </node>
+      <node id="922">
+        <label>QCPRange</label>
+        <link refid="classQCPRange"/>
+      </node>
+      <node id="928">
+        <label>QCPLegend</label>
+        <link refid="classQCPLegend"/>
+        <childnode refid="917" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="924">
+        <label>QCPLineEnding</label>
+        <link refid="classQCPLineEnding"/>
+      </node>
+      <node id="918">
+        <label>QCPLayout</label>
+        <link refid="classQCPLayout"/>
+        <childnode refid="919" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="925">
+        <label>QCPGrid</label>
+        <link refid="classQCPGrid"/>
+        <childnode refid="920" relation="public-inheritance">
+        </childnode>
+        <childnode refid="921" relation="usage">
+          <edgelabel>mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="923">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="classQCPAxisPainterPrivate"/>
+        <childnode refid="924" relation="usage">
+          <edgelabel>lowerEnding</edgelabel>
+          <edgelabel>upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="913" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="914">
+        <label>QWidget</label>
+      </node>
+      <node id="915">
+        <label>QCPLayer</label>
+        <link refid="classQCPLayer"/>
+        <childnode refid="916" relation="public-inheritance">
+        </childnode>
+        <childnode refid="913" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="917">
+        <label>QCPLayoutGrid</label>
+        <link refid="classQCPLayoutGrid"/>
+        <childnode refid="918" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="920">
+        <label>QCPLayerable</label>
+        <link refid="classQCPLayerable"/>
+        <childnode refid="916" relation="public-inheritance">
+        </childnode>
+        <childnode refid="915" relation="usage">
+          <edgelabel>mLayer</edgelabel>
+        </childnode>
+        <childnode refid="913" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="921">
+        <label>QCPAxis</label>
+        <link refid="classQCPAxis"/>
+        <childnode refid="920" relation="public-inheritance">
+        </childnode>
+        <childnode refid="922" relation="usage">
+          <edgelabel>mRange</edgelabel>
+        </childnode>
+        <childnode refid="923" relation="usage">
+          <edgelabel>mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="925" relation="usage">
+          <edgelabel>mGrid</edgelabel>
+        </childnode>
+        <childnode refid="926" relation="usage">
+          <edgelabel>mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="926">
+        <label>QCPAxisRect</label>
+        <link refid="classQCPAxisRect"/>
+        <childnode refid="919" relation="public-inheritance">
+        </childnode>
+        <childnode refid="927" relation="usage">
+          <edgelabel>mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="922" relation="usage">
+          <edgelabel>mDragStartVertRange</edgelabel>
+          <edgelabel>mDragStartHorzRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="913">
+        <label>QCustomPlot</label>
+        <link refid="classQCustomPlot"/>
+        <childnode refid="914" relation="public-inheritance">
+        </childnode>
+        <childnode refid="915" relation="usage">
+          <edgelabel>mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="917" relation="usage">
+          <edgelabel>mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="921" relation="usage">
+          <edgelabel>yAxis2</edgelabel>
+          <edgelabel>xAxis2</edgelabel>
+          <edgelabel>xAxis</edgelabel>
+          <edgelabel>yAxis</edgelabel>
+        </childnode>
+        <childnode refid="928" relation="usage">
+          <edgelabel>legend</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1681" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1680" bodyend="1897"/>
+    <listofallmembers>
+      <member refid="classQCustomPlot_1a81da9c07843d3e2beb1133dadb49acfc" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>addGraph</name></member>
+      <member refid="classQCustomPlot_1aa500620379262321685cb7a7674cbd2a" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>addItem</name></member>
+      <member refid="classQCustomPlot_1ad5255393df078448bb6ac83fa5db5f52" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>addLayer</name></member>
+      <member refid="classQCustomPlot_1ab7ad9174f701f9c6f64e378df77927a6" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>addPlottable</name></member>
+      <member refid="classQCustomPlot_1a6f4fa624af060bc5919c5f266cf426a0" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>afterReplot</name></member>
+      <member refid="classQCustomPlot_1a81e954fbb485bb44c609e5707f0067b3" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>antialiasedElements</name></member>
+      <member refid="classQCustomPlot_1ad1599fc3fd1833b5988f6b89c1f616ca" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>autoAddPlottableToLegend</name></member>
+      <member refid="classQCustomPlot_1abf635f8b56ab5c16d5de9f358543e82b" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>axisClick</name></member>
+      <member refid="classQCustomPlot_1a6df35357460181a72da3e93d600f5256" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>axisDoubleClick</name></member>
+      <member refid="classQCustomPlot_1ad652a2b97827e95a6939e0838a251249" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>axisRect</name></member>
+      <member refid="classQCustomPlot_1a340fa24b1607e445cedda9685670ead3" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>axisRectCount</name></member>
+      <member refid="classQCustomPlot_1a040194871f98aa377fab056a83a24d7a" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>axisRects</name></member>
+      <member refid="classQCustomPlot_1aca64f782a4b96e12d77836c4a2650ad2" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>axisRemoved</name></member>
+      <member refid="classQCustomPlot_1a4643ddc8249cc4f51725650677c2b779" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>background</name></member>
+      <member refid="classQCustomPlot_1af9a6e0fe88e4b8ae5504ee9646abb121" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>backgroundScaled</name></member>
+      <member refid="classQCustomPlot_1a3394512baf54fbcdc7613ac44a07c3b6" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>backgroundScaledMode</name></member>
+      <member refid="classQCustomPlot_1a0cd30e29b73efd6afe096e44bc5956f5" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>beforeReplot</name></member>
+      <member refid="classQCustomPlot_1ab0f3abff2d2f7df3668b5836f39207fa" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>clearGraphs</name></member>
+      <member refid="classQCustomPlot_1abdfd07d4f0591d0cf967f85013fd3645" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>clearItems</name></member>
+      <member refid="classQCustomPlot_1a9a409bb3201878adb7ffba1c89c4e004" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>clearPlottables</name></member>
+      <member refid="classQCustomPlot_1a5ff39b8d1097115a317885567c76d95d" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>currentLayer</name></member>
+      <member refid="classQCustomPlot_1a3b2698464e81b0771bdcaeb5bd306886" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>deselectAll</name></member>
+      <member refid="classQCustomPlot_1a8f21771005776857a1aaeb76a6d3db7e" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>draw</name></member>
+      <member refid="classQCustomPlot_1a05dd52438cee4353b18c1e53a439008d" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>drawBackground</name></member>
+      <member refid="classQCustomPlot_1a92870be7fd907ded84f97620b0189275" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>graph</name></member>
+      <member refid="classQCustomPlot_1aa4284024fdbebf141788aa6d5d66d286" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>graph</name></member>
+      <member refid="classQCustomPlot_1a7d9b4d19114b2fde60f0233eeb0aa682" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>graphCount</name></member>
+      <member refid="classQCustomPlot_1ab4199c38b03e63a2623c82453fe8add5" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>hasItem</name></member>
+      <member refid="classQCustomPlot_1a4fc28914e2ee91aab424b7ce46b6bdf1" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>hasPlottable</name></member>
+      <member refid="classQCustomPlot_1a12401c02b6949a717f5749bb28c62983" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>interactions</name></member>
+      <member refid="classQCustomPlot_1a28c5bd1455d407654511bbe5e947916c" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>item</name></member>
+      <member refid="classQCustomPlot_1a49bfcb69640dd36412fd739c77e2e73e" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>item</name></member>
+      <member refid="classQCustomPlot_1a2a57aab52dd449f3c8c1e64394e06ae5" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>itemAt</name></member>
+      <member refid="classQCustomPlot_1ae16b51f52d2b7aebbc7e3e74e6ff2e4b" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>itemClick</name></member>
+      <member refid="classQCustomPlot_1a6fc860e30df17fd5c46056bf6fe29390" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>itemCount</name></member>
+      <member refid="classQCustomPlot_1ac83aa9f5a3e9bb3efc9cdc763dcd42a6" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>itemDoubleClick</name></member>
+      <member refid="classQCustomPlot_1a9c760438b60791d601374477beba5534" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>layer</name></member>
+      <member refid="classQCustomPlot_1a655094d9553fb31e5220e87df46da736" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>layer</name></member>
+      <member refid="classQCustomPlot_1a5df850030771335824181103608961bf" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>layerableAt</name></member>
+      <member refid="classQCustomPlot_1a1b3926884f5bd4bdda1495d8b3c891d0" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>layerCount</name></member>
+      <member refid="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>LayerInsertMode</name></member>
+      <member refid="classQCustomPlot_1a9e12b616019b4e08fa59a74d8176a5c4" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>layoutElementAt</name></member>
+      <member refid="classQCustomPlot_1a73da53368aa4c2db3d874cf0db50d140" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>legend</name></member>
+      <member refid="classQCustomPlot_1a79cff0baafbca10a3aaf694d2d3b9ab3" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>legendClick</name></member>
+      <member refid="classQCustomPlot_1a0250f835c044521df1619b132288bca7" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>legendDoubleClick</name></member>
+      <member refid="classQCustomPlot_1a281221decdec4a6b5e958d40b77ccef7" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>legendRemoved</name></member>
+      <member refid="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>limAbove</name></member>
+      <member refid="classQCustomPlot_1a75a8afbe6ef333b1f3d47abb25b9add7aee39cf650cd24e68552da0b697ce4a93" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>limBelow</name></member>
+      <member refid="classQCustomPlot_1aa333200629256830e273873b582a5524" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mAntialiasedElements</name></member>
+      <member refid="classQCustomPlot_1aaf3ea6a4cb04d35a149cc9a0cdac3394" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mAutoAddPlottableToLegend</name></member>
+      <member refid="classQCustomPlot_1a3aef5de4ac012178e3293248e9c63737" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mBackgroundBrush</name></member>
+      <member refid="classQCustomPlot_1ae8f4677399324a78c5f8dbfb95a34f90" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mBackgroundPixmap</name></member>
+      <member refid="classQCustomPlot_1a62fe584b20680b1b2e1c7efb5c5416a5" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mBackgroundScaled</name></member>
+      <member refid="classQCustomPlot_1ab82e8a5e3ad6b486f95d6da8bf49e9aa" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mBackgroundScaledMode</name></member>
+      <member refid="classQCustomPlot_1aa27569c92e74395af10151357d268628" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mCurrentLayer</name></member>
+      <member refid="classQCustomPlot_1adaf8d407d72a725169d7dbed2ee386bb" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mGraphs</name></member>
+      <member refid="classQCustomPlot_1a7c082777b0b0c0811120aac54c21a6de" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>minimumSizeHint</name></member>
+      <member refid="classQCustomPlot_1ad717377ceba7493b4b32f0bcbbdf1895" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mInteractions</name></member>
+      <member refid="classQCustomPlot_1a6a93905372326e31e98d6c3bc8953ec8" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mItems</name></member>
+      <member refid="classQCustomPlot_1a72ee313041b873d76c198793ce7e6c37" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mLayers</name></member>
+      <member refid="classQCustomPlot_1a2f2e8b25e59cf3cf7b15e4767c02e747" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mMouseEventElement</name></member>
+      <member refid="classQCustomPlot_1ac57090da95056ae4dd67be67adfa85bd" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mMousePressPos</name></member>
+      <member refid="classQCustomPlot_1a0e97e701c5671e7e463d2ce0211d0f8a" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mMultiSelectModifier</name></member>
+      <member refid="classQCustomPlot_1ac83df968435f6b8ec79f2993ab9124e8" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mNoAntialiasingOnDrag</name></member>
+      <member refid="classQCustomPlot_1a2b6ebcad00a90ba07f146cefcd4293da" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mNotAntialiasedElements</name></member>
+      <member refid="classQCustomPlot_1a9b232142c64fcf273a953ee08e5b90e9" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>mouseDoubleClick</name></member>
+      <member refid="classQCustomPlot_1a3ca763074eb4e330e91a6fc37c152749" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>mouseDoubleClickEvent</name></member>
+      <member refid="classQCustomPlot_1a742ca4f94688bed2a685fd8a56ce5704" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>mouseMove</name></member>
+      <member refid="classQCustomPlot_1a8fddeb996ae87ba305649e12b8ea4858" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>mouseMoveEvent</name></member>
+      <member refid="classQCustomPlot_1aca75bf9afb5dd19349c375de2a87a051" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>mousePress</name></member>
+      <member refid="classQCustomPlot_1a42885d04aa26b7b7fbcad2fa6bb4f320" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>mousePressEvent</name></member>
+      <member refid="classQCustomPlot_1ac8dc0ee6bb98e923c00b4ebafbe6134d" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>mouseRelease</name></member>
+      <member refid="classQCustomPlot_1a604c7e4ae673669800ac131239c5725e" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classQCustomPlot_1ac80a14206f99304a91d2aa55775ec3ff" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>mouseWheel</name></member>
+      <member refid="classQCustomPlot_1ae896140beff19424e9e9e02d6e331104" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>moveLayer</name></member>
+      <member refid="classQCustomPlot_1a753630df96e0672098d9e88bd41d1913" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mPaintBuffer</name></member>
+      <member refid="classQCustomPlot_1ac97298756882a0eecd98151679850ac1" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mPlotLayout</name></member>
+      <member refid="classQCustomPlot_1a62bf8e4e7f8d23fc1e9301ba0148269f" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mPlottables</name></member>
+      <member refid="classQCustomPlot_1aa184197a6101a9cc5807469e1d006c9e" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mPlottingHints</name></member>
+      <member refid="classQCustomPlot_1ab30daeca6612c3948afd368dce5f1c39" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mReplotting</name></member>
+      <member refid="classQCustomPlot_1a081bf046501d52642dc6d7e3bdb97d57" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mScaledBackgroundPixmap</name></member>
+      <member refid="classQCustomPlot_1abc36e12dd0482117ad810a800c847722" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mSelectionTolerance</name></member>
+      <member refid="classQCustomPlot_1a9b6b1a0fea8da3fda6d5e3d687202877" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>multiSelectModifier</name></member>
+      <member refid="classQCustomPlot_1ac0a7c38a715526c257cff95774f83ab6" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>mViewport</name></member>
+      <member refid="classQCustomPlot_1ae07f2895a34d13a97a10cae4d8e17a36" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>noAntialiasingOnDrag</name></member>
+      <member refid="classQCustomPlot_1a8060cee59757213764382a78d3196189" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>notAntialiasedElements</name></member>
+      <member refid="classQCustomPlot_1a5571022934b0eefa3f56fb5cd617fa72" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>paintEvent</name></member>
+      <member refid="classQCustomPlot_1ab12cf82bdc088f25f75fa6c4ead09fcc" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plotLayout</name></member>
+      <member refid="classQCustomPlot_1ad4eeafe213dadabff75db0432277f644" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plottable</name></member>
+      <member refid="classQCustomPlot_1ac47df4ac8bc180c8771083ecb599eaeb" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plottable</name></member>
+      <member refid="classQCustomPlot_1abcdc51f5fa3078f6dd12688bfa64f5ea" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plottableAt</name></member>
+      <member refid="classQCustomPlot_1a57e5efa8a854620e9bf62d31fc139f53" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plottableClick</name></member>
+      <member refid="classQCustomPlot_1a2dbfbf15dc38713f9a1c445a3dd2e989" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plottableCount</name></member>
+      <member refid="classQCustomPlot_1af2e6f1cea923dae437681d01ce7d0c31" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plottableDoubleClick</name></member>
+      <member refid="classQCustomPlot_1a130b55e205697a5288081e9fc11e443e" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>plottingHints</name></member>
+      <member refid="classQCustomPlot_1af123edeca169ec7a31958a1d714e1a8a" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>QCPAxis</name></member>
+      <member refid="classQCustomPlot_1acbf20ecb140f66c5fd1bc64ae0762990" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>QCPAxisRect</name></member>
+      <member refid="classQCustomPlot_1a5dbf96bf7664c1b6fce49063eeea6eef" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>QCPLayer</name></member>
+      <member refid="classQCustomPlot_1a8429035e7adfbd7f05805a6530ad5e3b" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>QCPLegend</name></member>
+      <member refid="classQCustomPlot_1a45b99626558651a6428b83972b0b34b8" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>QCustomPlot</name></member>
+      <member refid="classQCustomPlot_1a45d61392d13042e712a956d27762aa39" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>RefreshPriority</name></member>
+      <member refid="classQCustomPlot_1a903561be895fb6528a770d66ac5e6713" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>removeGraph</name></member>
+      <member refid="classQCustomPlot_1a9554b3d2d5b10c0f884bd4010b6c192c" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>removeGraph</name></member>
+      <member refid="classQCustomPlot_1ae04446557292551e8fb6e2c106e1848d" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>removeItem</name></member>
+      <member refid="classQCustomPlot_1abcfdda3d601c0441cab136137d715dea" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>removeItem</name></member>
+      <member refid="classQCustomPlot_1a40f75e342c5eaab6a86066a42a0e2a94" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>removeLayer</name></member>
+      <member refid="classQCustomPlot_1af3dafd56884208474f311d6226513ab2" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>removePlottable</name></member>
+      <member refid="classQCustomPlot_1afc210e0021480f8119bccf37839dbcc8" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>removePlottable</name></member>
+      <member refid="classQCustomPlot_1ab6f36fac37d020fc19efca3a92c01b2b" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>replot</name></member>
+      <member refid="classQCustomPlot_1a8898682337c33b27b42b85218a8d4c0b" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>rescaleAxes</name></member>
+      <member refid="classQCustomPlot_1ac157bc6fccdf7a1790d191ada90e44ab" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>resizeEvent</name></member>
+      <member refid="classQCustomPlot_1a45d61392d13042e712a956d27762aa39adfa1f2387617168d9299f4c8ad15b332" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>rpHint</name></member>
+      <member refid="classQCustomPlot_1a45d61392d13042e712a956d27762aa39a0d4831572370d871f2b7cb88806bac59" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>rpImmediate</name></member>
+      <member refid="classQCustomPlot_1a45d61392d13042e712a956d27762aa39aaaae083a19bc668597bf0f86e000f798" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>rpQueued</name></member>
+      <member refid="classQCustomPlot_1a6629d9e8e6da4bf18055ee0257fdce9a" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>saveBmp</name></member>
+      <member refid="classQCustomPlot_1a490c722092d1771e8ce4a7a73dfd84ab" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>saveJpg</name></member>
+      <member refid="classQCustomPlot_1a632da44c6d94ea8b271eb483b08b5114" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>savePdf</name></member>
+      <member refid="classQCustomPlot_1a7636261aff1f6d25c9da749ece3fc8b8" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>savePng</name></member>
+      <member refid="classQCustomPlot_1ab528b84cf92baabe29b1d0ef2f77c93e" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>saveRastered</name></member>
+      <member refid="classQCustomPlot_1a520f3ebc6527193da2540f2c82439e83" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>selectedAxes</name></member>
+      <member refid="classQCustomPlot_1a70f84dc15f70b91c1fb3ff18e03ddaaf" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>selectedGraphs</name></member>
+      <member refid="classQCustomPlot_1ad237a5162acd30d23ce520ae7a8b86cb" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>selectedItems</name></member>
+      <member refid="classQCustomPlot_1aafa931a82d7568af2ca51e5f939ff39a" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>selectedLegends</name></member>
+      <member refid="classQCustomPlot_1a1570cbbeec04f2852ede0ffb9ee92811" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>selectedPlottables</name></member>
+      <member refid="classQCustomPlot_1a500c64a109bc773c973ad274f2fa4190" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>selectionChangedByUser</name></member>
+      <member refid="classQCustomPlot_1a7b738074c75e80070ef6a10263c6cd69" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>selectionTolerance</name></member>
+      <member refid="classQCustomPlot_1aeef813bcf7efab8e765f9f87ec454691" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setAntialiasedElement</name></member>
+      <member refid="classQCustomPlot_1af6f91e5eab1be85f67c556e98c3745e8" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setAntialiasedElements</name></member>
+      <member refid="classQCustomPlot_1ad8858410c2db47b7104040a3aa61c3fc" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setAutoAddPlottableToLegend</name></member>
+      <member refid="classQCustomPlot_1a130358592cfca353ff3cf5571b49fb00" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setBackground</name></member>
+      <member refid="classQCustomPlot_1a8513971d6aa24d8b0d6a68d45b542130" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setBackground</name></member>
+      <member refid="classQCustomPlot_1a8ed256cf467bfa7ba1f9feaae62c3bd0" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setBackground</name></member>
+      <member refid="classQCustomPlot_1a36f0fa1317325dc7b7efea615ee2de1f" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setBackgroundScaled</name></member>
+      <member refid="classQCustomPlot_1a4c0eb4865b7949f62e1cb97db04a3de0" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setBackgroundScaledMode</name></member>
+      <member refid="classQCustomPlot_1a73a6dc47c653bb6f8f030abca5a11852" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setCurrentLayer</name></member>
+      <member refid="classQCustomPlot_1a23a4d3cadad1a0063c5fe19aac5659e6" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setCurrentLayer</name></member>
+      <member refid="classQCustomPlot_1a422bf1bc6d56dac75a3d805d9a65902c" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setInteraction</name></member>
+      <member refid="classQCustomPlot_1a5ee1e2f6ae27419deca53e75907c27e5" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setInteractions</name></member>
+      <member refid="classQCustomPlot_1a8fc96e3b5138a06759a2a90c166df516" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setMultiSelectModifier</name></member>
+      <member refid="classQCustomPlot_1a775bdcb6329d44701aeaa6135b0e5265" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setNoAntialiasingOnDrag</name></member>
+      <member refid="classQCustomPlot_1afc657938a707c890e449ae89203a076d" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setNotAntialiasedElement</name></member>
+      <member refid="classQCustomPlot_1ae10d685b5eabea2999fb8775ca173c24" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setNotAntialiasedElements</name></member>
+      <member refid="classQCustomPlot_1a3b7c97bb6c16464e9e15190c07abe9a9" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setPlottingHint</name></member>
+      <member refid="classQCustomPlot_1a94a33cbdadbbac5934843508bcfc210d" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setPlottingHints</name></member>
+      <member refid="classQCustomPlot_1a4dc31241d7b09680950e19e5f971ed93" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setSelectionTolerance</name></member>
+      <member refid="classQCustomPlot_1a3f9bc4b939dd8aaba9339fd09f273fc4" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>setViewport</name></member>
+      <member refid="classQCustomPlot_1a7700ba7bcd90dfe39168cbf2eb906f18" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>sizeHint</name></member>
+      <member refid="classQCustomPlot_1a2137a819e518fee7edd1c0bf5984d8d6" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>titleClick</name></member>
+      <member refid="classQCustomPlot_1ad51d65f6abf5edfaeef6e0519a4c1a2f" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>titleDoubleClick</name></member>
+      <member refid="classQCustomPlot_1a1be68d5c0f1e086d6374d1340a193fb9" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>toPainter</name></member>
+      <member refid="classQCustomPlot_1aabb974d71ce96c137dc04eb6eab844fe" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>toPixmap</name></member>
+      <member refid="classQCustomPlot_1a3117754df3a5638787a6223c7147970f" prot="protected" virt="non-virtual"><scope>QCustomPlot</scope><name>updateLayerIndices</name></member>
+      <member refid="classQCustomPlot_1a953ecdbc28018e7e84cb6213ad3d88c2" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>viewport</name></member>
+      <member refid="classQCustomPlot_1a7df4c64bbe54fdd278aba71cc0e96ee7" prot="protected" virt="virtual"><scope>QCustomPlot</scope><name>wheelEvent</name></member>
+      <member refid="classQCustomPlot_1a968b5ac86c181a49bba78c2b62a80cb3" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>xAxis</name></member>
+      <member refid="classQCustomPlot_1ada41599f22cad901c030f3dcbdd82fd9" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>xAxis2</name></member>
+      <member refid="classQCustomPlot_1af6fea5679725b152c14facd920b19367" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>yAxis</name></member>
+      <member refid="classQCustomPlot_1af13fdc5bce7d0fabd640f13ba805c0b7" prot="public" virt="non-virtual"><scope>QCustomPlot</scope><name>yAxis2</name></member>
+      <member refid="classQCustomPlot_1a6e8fe7a1f7b72f895f787afdb5bb0a0f" prot="public" virt="virtual"><scope>QCustomPlot</scope><name>~QCustomPlot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

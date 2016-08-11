@@ -1,0 +1,845 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCPItemPosition" kind="class" prot="public">
+    <compoundname>QCPItemPosition</compoundname>
+    <basecompoundref refid="classQCPItemAnchor" prot="public" virt="non-virtual">QCPItemAnchor</basecompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" prot="public" static="no">
+        <name>PositionType</name>
+        <enumvalue id="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8a564f5e53e550ead1ec5fc7fc7d0b73e0" prot="public">
+          <name>ptAbsolute</name>
+          <briefdescription>
+<para>Static positioning in pixels, starting from the top left corner of the viewport/widget. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8ac7d6aa89ceacb39658b0d6da061c789a" prot="public">
+          <name>ptViewportRatio</name>
+          <briefdescription>
+<para>Static positioning given by a fraction of the viewport size. For example, if you call setCoords(0, 0), the position will be at the top &lt; left corner of the viewport/widget. setCoords(1, 1) will be at the bottom right corner, setCoords(0.5, 0) will be horizontally centered and &lt; vertically at the top of the viewport/widget, etc. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8a01080fd00eaf09fa238ef6b73bbfef75" prot="public">
+          <name>ptAxisRectRatio</name>
+          <briefdescription>
+<para>Static positioning given by a fraction of the axis rect size (see <ref refid="classQCPItemPosition_1a0cd9b326fb324710169e92e8ca0041c2" kindref="member">setAxisRect</ref>). For example, if you call setCoords(0, 0), the position will be at the top &lt; left corner of the axis rect. setCoords(1, 1) will be at the bottom right corner, setCoords(0.5, 0) will be horizontally centered and &lt; vertically at the top of the axis rect, etc. You can also go beyond the axis rect by providing negative coordinates or coordinates larger than 1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8ad5ffb8dc99ad73263f7010c77342294c" prot="public">
+          <name>ptPlotCoords</name>
+          <briefdescription>
+<para>Dynamic positioning at a plot coordinate defined by two axes (see <ref refid="classQCPItemPosition_1a2185f45c75ac8cb9be89daeaaad50e37" kindref="member">setAxes</ref>). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the ways an item position can be specified. Thus it defines what the numbers passed to <ref refid="classQCPItemPosition_1aa988ba4e87ab684c9021017dcaba945f" kindref="member">setCoords</ref> actually mean.</para><para><simplesect kind="see"><para><ref refid="classQCPItemPosition_1aa476abf71ed8fa4c537457ebb1a754ad" kindref="member">setType</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1549" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1549" bodyend="1557"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQCPItemPosition_1ae2a617dce057c5f3ec6878c1823aa291" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+        <definition>PositionType QCPItemPosition::mPositionTypeX</definition>
+        <argsstring></argsstring>
+        <name>mPositionTypeX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1592" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1a47c96c0ef4380e1af4aaa7c2265c260b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+        <definition>PositionType QCPItemPosition::mPositionTypeY</definition>
+        <argsstring></argsstring>
+        <name>mPositionTypeY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1592" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1a63967a33933231e92f68c8ce06bfc37e" prot="protected" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> &gt;</type>
+        <definition>QPointer&lt;QCPAxis&gt; QCPItemPosition::mKeyAxis</definition>
+        <argsstring></argsstring>
+        <name>mKeyAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1593" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1a505dc2da24ba274452c1c817fcaba011" prot="protected" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> &gt;</type>
+        <definition>QPointer&lt;QCPAxis&gt; QCPItemPosition::mValueAxis</definition>
+        <argsstring></argsstring>
+        <name>mValueAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1593" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1add40fcb8994c247d85f42a126286b740" prot="protected" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classQCPAxisRect" kindref="compound">QCPAxisRect</ref> &gt;</type>
+        <definition>QPointer&lt;QCPAxisRect&gt; QCPItemPosition::mAxisRect</definition>
+        <argsstring></argsstring>
+        <name>mAxisRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1594" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1a4ff3931ad115603dfb4c7000b24bb415" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPItemPosition::mKey</definition>
+        <argsstring></argsstring>
+        <name>mKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1595" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1a67bf5df69f587d53731724a7d61c6c3f" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPItemPosition::mValue</definition>
+        <argsstring></argsstring>
+        <name>mValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1595" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1a41b4641d18c90997b9c01bf304181bf0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+        <definition>QCPItemAnchor* QCPItemPosition::mParentAnchorX</definition>
+        <argsstring></argsstring>
+        <name>mParentAnchorX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1596" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemPosition_1afc6142a6a09c8fa41c44d3d54fadd737" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+        <definition>QCPItemAnchor * QCPItemPosition::mParentAnchorY</definition>
+        <argsstring></argsstring>
+        <name>mParentAnchorY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1596" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1596" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCPItemPosition_1a3efc524f37fdcd22907545eb77555ce4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPItemPosition::QCPItemPosition</definition>
+        <argsstring>(QCustomPlot *parentPlot, QCPAbstractItem *parentItem, const QString name)</argsstring>
+        <name>QCPItemPosition</name>
+        <param>
+          <type><ref refid="classQCustomPlot" kindref="compound">QCustomPlot</ref> *</type>
+          <declname>parentPlot</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPAbstractItem" kindref="compound">QCPAbstractItem</ref> *</type>
+          <declname>parentItem</declname>
+        </param>
+        <param>
+          <type>const QString</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1559" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1aed5a821d8a7d1a3aa73c3a4a76ebd030" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual QCPItemPosition::~QCPItemPosition</definition>
+        <argsstring>()</argsstring>
+        <name>~QCPItemPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1560" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1ad64a1a26fbed5b8917e0eb8843099fd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+        <definition>PositionType QCPItemPosition::type</definition>
+        <argsstring>() const </argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1563" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1563" bodyend="1563"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a3cb68cf9c95be05c66a0f47448e328e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+        <definition>PositionType QCPItemPosition::typeX</definition>
+        <argsstring>() const </argsstring>
+        <name>typeX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1564" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1564" bodyend="1564"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a8a2fec9dec1ce006a598b32685fd7ab3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+        <definition>PositionType QCPItemPosition::typeY</definition>
+        <argsstring>() const </argsstring>
+        <name>typeY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1565" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1565" bodyend="1565"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a0db87cc41efabc1cf94acee7ebe14eee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+        <definition>QCPItemAnchor* QCPItemPosition::parentAnchor</definition>
+        <argsstring>() const </argsstring>
+        <name>parentAnchor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1566" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1566" bodyend="1566"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a485abba71c8552086c5f68e95dca7f9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+        <definition>QCPItemAnchor* QCPItemPosition::parentAnchorX</definition>
+        <argsstring>() const </argsstring>
+        <name>parentAnchorX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1567" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1567" bodyend="1567"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a1502dba801cb20424b7e097399e372de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+        <definition>QCPItemAnchor* QCPItemPosition::parentAnchorY</definition>
+        <argsstring>() const </argsstring>
+        <name>parentAnchorY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1568" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1568" bodyend="1568"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1ac3cb2bddf5f89e5181830be30b93d090" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPItemPosition::key</definition>
+        <argsstring>() const </argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1569" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1569" bodyend="1569"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a6817f7356d3a2b63e8446c6b6106dae1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPItemPosition::value</definition>
+        <argsstring>() const </argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1570" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1570" bodyend="1570"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a253d7adbb6d46299bd6cbc31aa8819f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPointF</type>
+        <definition>QPointF QCPItemPosition::coords</definition>
+        <argsstring>() const </argsstring>
+        <name>coords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1571" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1571" bodyend="1571"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1ab99de7ae5766d246defb2de9f47eaf51" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis* QCPItemPosition::keyAxis</definition>
+        <argsstring>() const </argsstring>
+        <name>keyAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1572" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1572" bodyend="1572"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a8d3a039fb2e69df86b4015daa30dfd2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis* QCPItemPosition::valueAxis</definition>
+        <argsstring>() const </argsstring>
+        <name>valueAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1573" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1573" bodyend="1573"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1adf5dfa5007f2a0909e1233bdfcacddfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPAxisRect" kindref="compound">QCPAxisRect</ref> *</type>
+        <definition>QCPAxisRect* QCPItemPosition::axisRect</definition>
+        <argsstring>() const </argsstring>
+        <name>axisRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1574" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1ae2feb5ba121b50dd93853c77b855b92b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QPointF</type>
+        <definition>virtual QPointF QCPItemPosition::pixelPoint</definition>
+        <argsstring>() const </argsstring>
+        <name>pixelPoint</name>
+        <reimplements refid="classQCPItemAnchor_1ae4e54e3260e36ce7133bfcc7445f85d1">pixelPoint</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1575" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1aa476abf71ed8fa4c537457ebb1a754ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setType</definition>
+        <argsstring>(PositionType type)</argsstring>
+        <name>setType</name>
+        <param>
+          <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1578" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a2113b2351d6d00457fb3559a4e20c3ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setTypeX</definition>
+        <argsstring>(PositionType type)</argsstring>
+        <name>setTypeX</name>
+        <param>
+          <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1579" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1ac2a454aa5a54c1615c50686601ec4510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setTypeY</definition>
+        <argsstring>(PositionType type)</argsstring>
+        <name>setTypeY</name>
+        <param>
+          <type><ref refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" kindref="member">PositionType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1580" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1ac094d67a95d2dceafa0d50b9db3a7e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPItemPosition::setParentAnchor</definition>
+        <argsstring>(QCPItemAnchor *parentAnchor, bool keepPixelPosition=false)</argsstring>
+        <name>setParentAnchor</name>
+        <param>
+          <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+          <declname>parentAnchor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepPixelPosition</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1581" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1add71461a973927c74e42179480916d9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPItemPosition::setParentAnchorX</definition>
+        <argsstring>(QCPItemAnchor *parentAnchor, bool keepPixelPosition=false)</argsstring>
+        <name>setParentAnchorX</name>
+        <param>
+          <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+          <declname>parentAnchor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepPixelPosition</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1582" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1add5ec1db9d19cec58a3b5c9e0a0c3f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPItemPosition::setParentAnchorY</definition>
+        <argsstring>(QCPItemAnchor *parentAnchor, bool keepPixelPosition=false)</argsstring>
+        <name>setParentAnchorY</name>
+        <param>
+          <type><ref refid="classQCPItemAnchor" kindref="compound">QCPItemAnchor</ref> *</type>
+          <declname>parentAnchor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepPixelPosition</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1583" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1aa988ba4e87ab684c9021017dcaba945f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setCoords</definition>
+        <argsstring>(double key, double value)</argsstring>
+        <name>setCoords</name>
+        <param>
+          <type>double</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1584" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1acc70b3abc143287f806e5f154e5e07b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setCoords</definition>
+        <argsstring>(const QPointF &amp;coords)</argsstring>
+        <name>setCoords</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1585" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a2185f45c75ac8cb9be89daeaaad50e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setAxes</definition>
+        <argsstring>(QCPAxis *keyAxis, QCPAxis *valueAxis)</argsstring>
+        <name>setAxes</name>
+        <param>
+          <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>keyAxis</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPAxis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>valueAxis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1586" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1a0cd9b326fb324710169e92e8ca0041c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setAxisRect</definition>
+        <argsstring>(QCPAxisRect *axisRect)</argsstring>
+        <name>setAxisRect</name>
+        <param>
+          <type><ref refid="classQCPAxisRect" kindref="compound">QCPAxisRect</ref> *</type>
+          <declname>axisRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1587" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemPosition_1ab404e56d9ac2ac2df0382c57933a71ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemPosition::setPixelPoint</definition>
+        <argsstring>(const QPointF &amp;pixelPoint)</argsstring>
+        <name>setPixelPoint</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pixelPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1588" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQCPItemPosition_1a577a7efc601df85a20b3e709d1ac320e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classQCPItemPosition" kindref="compound">QCPItemPosition</ref> *</type>
+        <definition>virtual QCPItemPosition* QCPItemPosition::toQCPItemPosition</definition>
+        <argsstring>()</argsstring>
+        <name>toQCPItemPosition</name>
+        <reimplements refid="classQCPItemAnchor_1a688325bfb121b71b7c8260a6aec6d67f">toQCPItemPosition</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1599" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1599" bodyend="1599"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="511">
+        <label>QCPItemPosition</label>
+        <link refid="classQCPItemPosition"/>
+        <childnode refid="512" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>QCPItemAnchor</label>
+        <link refid="classQCPItemAnchor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="530">
+        <label>QCPLayoutInset</label>
+        <link refid="classQCPLayoutInset"/>
+        <childnode refid="522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>QCPLayoutElement</label>
+        <link refid="classQCPLayoutElement"/>
+        <childnode refid="516" relation="public-inheritance">
+        </childnode>
+        <childnode refid="522" relation="usage">
+          <edgelabel>mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="517">
+        <label>QObject</label>
+      </node>
+      <node id="525">
+        <label>QCPRange</label>
+        <link refid="classQCPRange"/>
+      </node>
+      <node id="513">
+        <label>QCPItemPosition</label>
+        <link refid="classQCPItemPosition"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+        <childnode refid="514" relation="usage">
+          <edgelabel>mParentAnchorX</edgelabel>
+          <edgelabel>mParentAnchorY</edgelabel>
+        </childnode>
+      </node>
+      <node id="531">
+        <label>QCPLegend</label>
+        <link refid="classQCPLegend"/>
+        <childnode refid="521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>QCPLineEnding</label>
+        <link refid="classQCPLineEnding"/>
+      </node>
+      <node id="522">
+        <label>QCPLayout</label>
+        <link refid="classQCPLayout"/>
+        <childnode refid="523" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="528">
+        <label>QCPGrid</label>
+        <link refid="classQCPGrid"/>
+        <childnode refid="516" relation="public-inheritance">
+        </childnode>
+        <childnode refid="524" relation="usage">
+          <edgelabel>mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="526">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="classQCPAxisPainterPrivate"/>
+        <childnode refid="527" relation="usage">
+          <edgelabel>lowerEnding</edgelabel>
+          <edgelabel>upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="519" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="515">
+        <label>QCPAbstractItem</label>
+        <link refid="classQCPAbstractItem"/>
+        <childnode refid="516" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>QWidget</label>
+      </node>
+      <node id="518">
+        <label>QCPLayer</label>
+        <link refid="classQCPLayer"/>
+        <childnode refid="517" relation="public-inheritance">
+        </childnode>
+        <childnode refid="519" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="514">
+        <label>QCPItemAnchor</label>
+        <link refid="classQCPItemAnchor"/>
+        <childnode refid="515" relation="usage">
+          <edgelabel>mParentItem</edgelabel>
+        </childnode>
+        <childnode refid="519" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="521">
+        <label>QCPLayoutGrid</label>
+        <link refid="classQCPLayoutGrid"/>
+        <childnode refid="522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>QCPLayerable</label>
+        <link refid="classQCPLayerable"/>
+        <childnode refid="517" relation="public-inheritance">
+        </childnode>
+        <childnode refid="518" relation="usage">
+          <edgelabel>mLayer</edgelabel>
+        </childnode>
+        <childnode refid="519" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="524">
+        <label>QCPAxis</label>
+        <link refid="classQCPAxis"/>
+        <childnode refid="516" relation="public-inheritance">
+        </childnode>
+        <childnode refid="525" relation="usage">
+          <edgelabel>mRange</edgelabel>
+        </childnode>
+        <childnode refid="526" relation="usage">
+          <edgelabel>mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="528" relation="usage">
+          <edgelabel>mGrid</edgelabel>
+        </childnode>
+        <childnode refid="529" relation="usage">
+          <edgelabel>mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="529">
+        <label>QCPAxisRect</label>
+        <link refid="classQCPAxisRect"/>
+        <childnode refid="523" relation="public-inheritance">
+        </childnode>
+        <childnode refid="530" relation="usage">
+          <edgelabel>mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="525" relation="usage">
+          <edgelabel>mDragStartVertRange</edgelabel>
+          <edgelabel>mDragStartHorzRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="519">
+        <label>QCustomPlot</label>
+        <link refid="classQCustomPlot"/>
+        <childnode refid="520" relation="public-inheritance">
+        </childnode>
+        <childnode refid="518" relation="usage">
+          <edgelabel>mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="521" relation="usage">
+          <edgelabel>mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="524" relation="usage">
+          <edgelabel>yAxis2</edgelabel>
+          <edgelabel>xAxis2</edgelabel>
+          <edgelabel>xAxis</edgelabel>
+          <edgelabel>yAxis</edgelabel>
+        </childnode>
+        <childnode refid="531" relation="usage">
+          <edgelabel>legend</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="1541" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="1540" bodyend="1604"/>
+    <listofallmembers>
+      <member refid="classQCPItemAnchor_1aef15daa640debfb11b0aeaa2116c6fbc" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>addChildX</name></member>
+      <member refid="classQCPItemAnchor_1af05dc56f24536f0c7a9a0f57b58cea67" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>addChildY</name></member>
+      <member refid="classQCPItemPosition_1adf5dfa5007f2a0909e1233bdfcacddfd" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>axisRect</name></member>
+      <member refid="classQCPItemPosition_1a253d7adbb6d46299bd6cbc31aa8819f1" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>coords</name></member>
+      <member refid="classQCPItemPosition_1ac3cb2bddf5f89e5181830be30b93d090" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>key</name></member>
+      <member refid="classQCPItemPosition_1ab99de7ae5766d246defb2de9f47eaf51" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>keyAxis</name></member>
+      <member refid="classQCPItemAnchor_1a00c62070333e8345976b579676ad3997" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mAnchorId</name></member>
+      <member refid="classQCPItemPosition_1add40fcb8994c247d85f42a126286b740" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mAxisRect</name></member>
+      <member refid="classQCPItemAnchor_1a3c0bfd6e50f3b48e2a9b3824695b20f7" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mChildrenX</name></member>
+      <member refid="classQCPItemAnchor_1a3abe4eebd0683454d81c8341df6f7115" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mChildrenY</name></member>
+      <member refid="classQCPItemPosition_1a4ff3931ad115603dfb4c7000b24bb415" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mKey</name></member>
+      <member refid="classQCPItemPosition_1a63967a33933231e92f68c8ce06bfc37e" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mKeyAxis</name></member>
+      <member refid="classQCPItemAnchor_1a23ad4d0ab0d2cbb41a7baf05bcf996ec" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mName</name></member>
+      <member refid="classQCPItemPosition_1a41b4641d18c90997b9c01bf304181bf0" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mParentAnchorX</name></member>
+      <member refid="classQCPItemPosition_1afc6142a6a09c8fa41c44d3d54fadd737" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mParentAnchorY</name></member>
+      <member refid="classQCPItemAnchor_1a80fad480ad3bb980446ed6ebc00818ae" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mParentItem</name></member>
+      <member refid="classQCPItemAnchor_1a59b968410831ba91a25cc75a77dde6f5" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mParentPlot</name></member>
+      <member refid="classQCPItemPosition_1ae2a617dce057c5f3ec6878c1823aa291" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mPositionTypeX</name></member>
+      <member refid="classQCPItemPosition_1a47c96c0ef4380e1af4aaa7c2265c260b" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mPositionTypeY</name></member>
+      <member refid="classQCPItemPosition_1a67bf5df69f587d53731724a7d61c6c3f" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mValue</name></member>
+      <member refid="classQCPItemPosition_1a505dc2da24ba274452c1c817fcaba011" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>mValueAxis</name></member>
+      <member refid="classQCPItemAnchor_1ac93984042a58c875e76847dc3e5f75fe" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>name</name></member>
+      <member refid="classQCPItemPosition_1a0db87cc41efabc1cf94acee7ebe14eee" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>parentAnchor</name></member>
+      <member refid="classQCPItemPosition_1a485abba71c8552086c5f68e95dca7f9a" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>parentAnchorX</name></member>
+      <member refid="classQCPItemPosition_1a1502dba801cb20424b7e097399e372de" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>parentAnchorY</name></member>
+      <member refid="classQCPItemPosition_1ae2feb5ba121b50dd93853c77b855b92b" prot="public" virt="virtual"><scope>QCPItemPosition</scope><name>pixelPoint</name></member>
+      <member refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>PositionType</name></member>
+      <member refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8a564f5e53e550ead1ec5fc7fc7d0b73e0" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>ptAbsolute</name></member>
+      <member refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8a01080fd00eaf09fa238ef6b73bbfef75" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>ptAxisRectRatio</name></member>
+      <member refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8ad5ffb8dc99ad73263f7010c77342294c" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>ptPlotCoords</name></member>
+      <member refid="classQCPItemPosition_1aad9936c22bf43e3d358552f6e86dbdc8ac7d6aa89ceacb39658b0d6da061c789a" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>ptViewportRatio</name></member>
+      <member refid="classQCPItemAnchor_1aeb6b681d2bf324db40a915d32ec5624f" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>QCPItemAnchor</name></member>
+      <member refid="classQCPItemPosition_1a3efc524f37fdcd22907545eb77555ce4" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>QCPItemPosition</name></member>
+      <member refid="classQCPItemAnchor_1a230b1d494cda63458e289bbe1b642599" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>removeChildX</name></member>
+      <member refid="classQCPItemAnchor_1aa2394911d8fff3bd958b9f4f1994b64d" prot="protected" virt="non-virtual"><scope>QCPItemPosition</scope><name>removeChildY</name></member>
+      <member refid="classQCPItemPosition_1a2185f45c75ac8cb9be89daeaaad50e37" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setAxes</name></member>
+      <member refid="classQCPItemPosition_1a0cd9b326fb324710169e92e8ca0041c2" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setAxisRect</name></member>
+      <member refid="classQCPItemPosition_1aa988ba4e87ab684c9021017dcaba945f" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setCoords</name></member>
+      <member refid="classQCPItemPosition_1acc70b3abc143287f806e5f154e5e07b0" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setCoords</name></member>
+      <member refid="classQCPItemPosition_1ac094d67a95d2dceafa0d50b9db3a7e51" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setParentAnchor</name></member>
+      <member refid="classQCPItemPosition_1add71461a973927c74e42179480916d9c" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setParentAnchorX</name></member>
+      <member refid="classQCPItemPosition_1add5ec1db9d19cec58a3b5c9e0a0c3f9d" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setParentAnchorY</name></member>
+      <member refid="classQCPItemPosition_1ab404e56d9ac2ac2df0382c57933a71ef" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setPixelPoint</name></member>
+      <member refid="classQCPItemPosition_1aa476abf71ed8fa4c537457ebb1a754ad" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setType</name></member>
+      <member refid="classQCPItemPosition_1a2113b2351d6d00457fb3559a4e20c3ea" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setTypeX</name></member>
+      <member refid="classQCPItemPosition_1ac2a454aa5a54c1615c50686601ec4510" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>setTypeY</name></member>
+      <member refid="classQCPItemPosition_1a577a7efc601df85a20b3e709d1ac320e" prot="protected" virt="virtual"><scope>QCPItemPosition</scope><name>toQCPItemPosition</name></member>
+      <member refid="classQCPItemPosition_1ad64a1a26fbed5b8917e0eb8843099fd6" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>type</name></member>
+      <member refid="classQCPItemPosition_1a3cb68cf9c95be05c66a0f47448e328e5" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>typeX</name></member>
+      <member refid="classQCPItemPosition_1a8a2fec9dec1ce006a598b32685fd7ab3" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>typeY</name></member>
+      <member refid="classQCPItemPosition_1a6817f7356d3a2b63e8446c6b6106dae1" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>value</name></member>
+      <member refid="classQCPItemPosition_1a8d3a039fb2e69df86b4015daa30dfd2d" prot="public" virt="non-virtual"><scope>QCPItemPosition</scope><name>valueAxis</name></member>
+      <member refid="classQCPItemAnchor_1a2238425fc4ea48013659f9a18aef48a1" prot="public" virt="virtual"><scope>QCPItemPosition</scope><name>~QCPItemAnchor</name></member>
+      <member refid="classQCPItemPosition_1aed5a821d8a7d1a3aa73c3a4a76ebd030" prot="public" virt="virtual"><scope>QCPItemPosition</scope><name>~QCPItemPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

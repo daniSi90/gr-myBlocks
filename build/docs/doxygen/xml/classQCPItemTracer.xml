@@ -1,0 +1,904 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCPItemTracer" kind="class" prot="public">
+    <compoundname>QCPItemTracer</compoundname>
+    <basecompoundref refid="classQCPAbstractItem" prot="public" virt="non-virtual">QCPAbstractItem</basecompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500" prot="public" static="no">
+        <name>TracerStyle</name>
+        <enumvalue id="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4" prot="public">
+          <name>tsNone</name>
+          <briefdescription>
+<para>The tracer is not visible. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa" prot="public">
+          <name>tsPlus</name>
+          <briefdescription>
+<para>A plus shaped crosshair with limited size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f" prot="public">
+          <name>tsCrosshair</name>
+          <briefdescription>
+<para>A plus shaped crosshair which spans the complete axis rect. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e" prot="public">
+          <name>tsCircle</name>
+          <briefdescription>
+<para>A circle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b" prot="public">
+          <name>tsSquare</name>
+          <briefdescription>
+<para>A square. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The different visual appearances a tracer item can have. Some styles size may be controlled with <ref refid="classQCPItemTracer_1ae47fe0617f5fef5fdb766999569be10a" kindref="member">setSize</ref>.</para><para><simplesect kind="see"><para><ref refid="classQCPItemTracer_1a41a2ac4f1acd7897b4e2a2579c03204e" kindref="member">setStyle</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3654" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3654" bodyend="3659"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classQCPItemTracer_1a69917e2fdb2b3a929c196958feee7cbe" prot="public" static="no" mutable="no">
+        <type><ref refid="classQCPItemPosition" kindref="compound">QCPItemPosition</ref> *const</type>
+        <definition>QCPItemPosition* const QCPItemTracer::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3693" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3693" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQCPItemTracer_1a579e3bd6bd16d6aaff03638dc8a99a69" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPItemTracer::mPen</definition>
+        <argsstring></argsstring>
+        <name>mPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3697" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1a3f61829784200819661d1e2a5354d866" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPItemTracer::mSelectedPen</definition>
+        <argsstring></argsstring>
+        <name>mSelectedPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3697" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1a6597be63a17a266233941354200b2340" prot="protected" static="no" mutable="no">
+        <type>QBrush</type>
+        <definition>QBrush QCPItemTracer::mBrush</definition>
+        <argsstring></argsstring>
+        <name>mBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3698" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1a1c15d2adde40efdcc0ef1ff78fd256a6" prot="protected" static="no" mutable="no">
+        <type>QBrush</type>
+        <definition>QBrush QCPItemTracer::mSelectedBrush</definition>
+        <argsstring></argsstring>
+        <name>mSelectedBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3698" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1a575153a24bb357d1e006f6bc3bd099b9" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPItemTracer::mSize</definition>
+        <argsstring></argsstring>
+        <name>mSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3699" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1afb1f236bebf417544e0138fef22a292e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500" kindref="member">TracerStyle</ref></type>
+        <definition>TracerStyle QCPItemTracer::mStyle</definition>
+        <argsstring></argsstring>
+        <name>mStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3700" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1a2d70cf616b579563aa15f796dfc143ac" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph* QCPItemTracer::mGraph</definition>
+        <argsstring></argsstring>
+        <name>mGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3701" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1a8fa20f2e9ee07d21fd7c8d30ba4702ca" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPItemTracer::mGraphKey</definition>
+        <argsstring></argsstring>
+        <name>mGraphKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3702" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPItemTracer_1afab37c22ad39f235921e86f93cd84595" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPItemTracer::mInterpolating</definition>
+        <argsstring></argsstring>
+        <name>mInterpolating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3703" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3703" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCPItemTracer_1adc5ca846eeac323db4aa1fc4081e36be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPItemTracer::QCPItemTracer</definition>
+        <argsstring>(QCustomPlot *parentPlot)</argsstring>
+        <name>QCPItemTracer</name>
+        <param>
+          <type><ref refid="classQCustomPlot" kindref="compound">QCustomPlot</ref> *</type>
+          <declname>parentPlot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3662" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1adac550cc52d94fbe65d670367d5c3e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual QCPItemTracer::~QCPItemTracer</definition>
+        <argsstring>()</argsstring>
+        <name>~QCPItemTracer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3663" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a1f51b61e98c276298a0874d5e89707f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPItemTracer::pen</definition>
+        <argsstring>() const </argsstring>
+        <name>pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3666" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3666" bodyend="3666"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1ad75e5d2d868dbedc176f7911091f379b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPItemTracer::selectedPen</definition>
+        <argsstring>() const </argsstring>
+        <name>selectedPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3667" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3667" bodyend="3667"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1af07527750cfb6afc3c0ba4bec012011f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QBrush</type>
+        <definition>QBrush QCPItemTracer::brush</definition>
+        <argsstring>() const </argsstring>
+        <name>brush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3668" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3668" bodyend="3668"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1afed284222253083375bfd21d3d4dbc30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QBrush</type>
+        <definition>QBrush QCPItemTracer::selectedBrush</definition>
+        <argsstring>() const </argsstring>
+        <name>selectedBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3669" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3669" bodyend="3669"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a2607fcb3d01e90773ea1532fd6803760" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPItemTracer::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3670" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3670" bodyend="3670"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a871832dace1709f877c3136fac7ae1ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500" kindref="member">TracerStyle</ref></type>
+        <definition>TracerStyle QCPItemTracer::style</definition>
+        <argsstring>() const </argsstring>
+        <name>style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3671" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3671" bodyend="3671"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a74c90da0e6730839b8d7cf6445a4ec1f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph* QCPItemTracer::graph</definition>
+        <argsstring>() const </argsstring>
+        <name>graph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3672" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3672" bodyend="3672"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a361c5c9b93bdf4588fc49bc3097529ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPItemTracer::graphKey</definition>
+        <argsstring>() const </argsstring>
+        <name>graphKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3673" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3673" bodyend="3673"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1ab318c233fa35c17a317af38ce7b3c312" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPItemTracer::interpolating</definition>
+        <argsstring>() const </argsstring>
+        <name>interpolating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3674" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3674" bodyend="3674"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1af8048636fc1ef0152e51809b008df2ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3677" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1ae1bf70db7f13f928660168cd3e5069f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setSelectedPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setSelectedPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3678" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a2c303f7470a30084daa201ed556b3c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setBrush</definition>
+        <argsstring>(const QBrush &amp;brush)</argsstring>
+        <name>setBrush</name>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3679" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a0f55c084980a7a312af859d3e7b558ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setSelectedBrush</definition>
+        <argsstring>(const QBrush &amp;brush)</argsstring>
+        <name>setSelectedBrush</name>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3680" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1ae47fe0617f5fef5fdb766999569be10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setSize</definition>
+        <argsstring>(double size)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3681" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a41a2ac4f1acd7897b4e2a2579c03204e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setStyle</definition>
+        <argsstring>(TracerStyle style)</argsstring>
+        <name>setStyle</name>
+        <param>
+          <type><ref refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500" kindref="member">TracerStyle</ref></type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3682" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1af5886f4ded8dd68cb4f3388f390790c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setGraph</definition>
+        <argsstring>(QCPGraph *graph)</argsstring>
+        <name>setGraph</name>
+        <param>
+          <type><ref refid="classQCPGraph" kindref="compound">QCPGraph</ref> *</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3683" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a6840143b42f3b685cedf7c6d83a704c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setGraphKey</definition>
+        <argsstring>(double key)</argsstring>
+        <name>setGraphKey</name>
+        <param>
+          <type>double</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3684" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a6c244a9d1175bef12b50afafd4f5fcd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::setInterpolating</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setInterpolating</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3685" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a6eb61012f76de804f78c8af25ab4a755" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double QCPItemTracer::selectTest</definition>
+        <argsstring>(const QPointF &amp;pos, bool onlySelectable, QVariant *details=0) const </argsstring>
+        <name>selectTest</name>
+        <reimplements refid="classQCPAbstractItem_1a96d522d10ffc0413b9a366c6f7f0476b">selectTest</reimplements>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>onlySelectable</declname>
+        </param>
+        <param>
+          <type>QVariant *</type>
+          <declname>details</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3688" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1a5b90296109e36384aedbc8908a670413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPItemTracer::updatePosition</definition>
+        <argsstring>()</argsstring>
+        <name>updatePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3691" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQCPItemTracer_1a580b8ac6c894abcb56507d1a217db441" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QCPItemTracer::draw</definition>
+        <argsstring>(QCPPainter *painter)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classQCPAbstractItem_1ae8a182b69c94d697f36226c064645f07">draw</reimplements>
+        <param>
+          <type><ref refid="classQCPPainter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3706" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1af87132b7698d5bb35c96a8a0b9e7180e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPItemTracer::mainPen</definition>
+        <argsstring>() const </argsstring>
+        <name>mainPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3709" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPItemTracer_1aaf4e72e2d87f53279b9f9ba624961bf5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QBrush</type>
+        <definition>QBrush QCPItemTracer::mainBrush</definition>
+        <argsstring>() const </argsstring>
+        <name>mainBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3710" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="607">
+        <label>QObject</label>
+      </node>
+      <node id="604">
+        <label>QCPItemTracer</label>
+        <link refid="classQCPItemTracer"/>
+        <childnode refid="605" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="605">
+        <label>QCPAbstractItem</label>
+        <link refid="classQCPAbstractItem"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="606">
+        <label>QCPLayerable</label>
+        <link refid="classQCPLayerable"/>
+        <childnode refid="607" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="624">
+        <label>QCPLayoutInset</label>
+        <link refid="classQCPLayoutInset"/>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="617">
+        <label>QCPLayoutElement</label>
+        <link refid="classQCPLayoutElement"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="616" relation="usage">
+          <edgelabel>mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="611">
+        <label>QObject</label>
+      </node>
+      <node id="619">
+        <label>QCPRange</label>
+        <link refid="classQCPRange"/>
+      </node>
+      <node id="629">
+        <label>QCPItemPosition</label>
+        <link refid="classQCPItemPosition"/>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="630" relation="usage">
+          <edgelabel>mParentAnchorX</edgelabel>
+          <edgelabel>mParentAnchorY</edgelabel>
+        </childnode>
+      </node>
+      <node id="625">
+        <label>QCPLegend</label>
+        <link refid="classQCPLegend"/>
+        <childnode refid="615" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="608">
+        <label>QCPItemTracer</label>
+        <link refid="classQCPItemTracer"/>
+        <childnode refid="609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="626" relation="usage">
+          <edgelabel>mGraph</edgelabel>
+        </childnode>
+        <childnode refid="629" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="627">
+        <label>QCPAbstractPlottable</label>
+        <link refid="classQCPAbstractPlottable"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="621">
+        <label>QCPLineEnding</label>
+        <link refid="classQCPLineEnding"/>
+      </node>
+      <node id="616">
+        <label>QCPLayout</label>
+        <link refid="classQCPLayout"/>
+        <childnode refid="617" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="622">
+        <label>QCPGrid</label>
+        <link refid="classQCPGrid"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="618" relation="usage">
+          <edgelabel>mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="620">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="classQCPAxisPainterPrivate"/>
+        <childnode refid="621" relation="usage">
+          <edgelabel>lowerEnding</edgelabel>
+          <edgelabel>upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="613" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="626">
+        <label>QCPGraph</label>
+        <link refid="classQCPGraph"/>
+        <childnode refid="627" relation="public-inheritance">
+        </childnode>
+        <childnode refid="628" relation="usage">
+          <edgelabel>mScatterStyle</edgelabel>
+        </childnode>
+      </node>
+      <node id="609">
+        <label>QCPAbstractItem</label>
+        <link refid="classQCPAbstractItem"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="614">
+        <label>QWidget</label>
+      </node>
+      <node id="612">
+        <label>QCPLayer</label>
+        <link refid="classQCPLayer"/>
+        <childnode refid="611" relation="public-inheritance">
+        </childnode>
+        <childnode refid="613" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="630">
+        <label>QCPItemAnchor</label>
+        <link refid="classQCPItemAnchor"/>
+        <childnode refid="609" relation="usage">
+          <edgelabel>mParentItem</edgelabel>
+        </childnode>
+        <childnode refid="613" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="615">
+        <label>QCPLayoutGrid</label>
+        <link refid="classQCPLayoutGrid"/>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="610">
+        <label>QCPLayerable</label>
+        <link refid="classQCPLayerable"/>
+        <childnode refid="611" relation="public-inheritance">
+        </childnode>
+        <childnode refid="612" relation="usage">
+          <edgelabel>mLayer</edgelabel>
+        </childnode>
+        <childnode refid="613" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="618">
+        <label>QCPAxis</label>
+        <link refid="classQCPAxis"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="619" relation="usage">
+          <edgelabel>mRange</edgelabel>
+        </childnode>
+        <childnode refid="620" relation="usage">
+          <edgelabel>mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="622" relation="usage">
+          <edgelabel>mGrid</edgelabel>
+        </childnode>
+        <childnode refid="623" relation="usage">
+          <edgelabel>mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="623">
+        <label>QCPAxisRect</label>
+        <link refid="classQCPAxisRect"/>
+        <childnode refid="617" relation="public-inheritance">
+        </childnode>
+        <childnode refid="624" relation="usage">
+          <edgelabel>mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="619" relation="usage">
+          <edgelabel>mDragStartVertRange</edgelabel>
+          <edgelabel>mDragStartHorzRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="613">
+        <label>QCustomPlot</label>
+        <link refid="classQCustomPlot"/>
+        <childnode refid="614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="612" relation="usage">
+          <edgelabel>mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="615" relation="usage">
+          <edgelabel>mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="618" relation="usage">
+          <edgelabel>yAxis2</edgelabel>
+          <edgelabel>xAxis2</edgelabel>
+          <edgelabel>xAxis</edgelabel>
+          <edgelabel>yAxis</edgelabel>
+        </childnode>
+        <childnode refid="625" relation="usage">
+          <edgelabel>legend</edgelabel>
+        </childnode>
+      </node>
+      <node id="628">
+        <label>QCPScatterStyle</label>
+        <link refid="classQCPScatterStyle"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="3635" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="3634" bodyend="3711"/>
+    <listofallmembers>
+      <member refid="classQCPAbstractItem_1abb37b132737a1232779d01c274ce79ab" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>anchor</name></member>
+      <member refid="classQCPAbstractItem_1a479e772593fca1a8238b43879ddc2571" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>anchorPixelPoint</name></member>
+      <member refid="classQCPAbstractItem_1ae4a33917ec04149231f633bf4294e8ac" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>anchors</name></member>
+      <member refid="classQCPLayerable_1aef5cb4aa899ed9dc9384fd614560291e" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>antialiased</name></member>
+      <member refid="classQCPLayerable_1a62bd552d1a45aa9accb24b310542279e" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>applyAntialiasingHint</name></member>
+      <member refid="classQCPAbstractItem_1ac7993f02760f63675257f5dbe4b0b079" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>applyDefaultAntialiasingHint</name></member>
+      <member refid="classQCPItemTracer_1af07527750cfb6afc3c0ba4bec012011f" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>brush</name></member>
+      <member refid="classQCPAbstractItem_1aeaecafc8043eb74986e169c7c6899bcf" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>clipAxisRect</name></member>
+      <member refid="classQCPAbstractItem_1a46d0e58fd96e70aaa69ceca2541b39ed" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>clipRect</name></member>
+      <member refid="classQCPAbstractItem_1a5b0ea171823033bcb8aee81f4a034871" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>clipToAxisRect</name></member>
+      <member refid="classQCPAbstractItem_1a923b24e112879e10ca6eb90d3499c1da" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>createAnchor</name></member>
+      <member refid="classQCPAbstractItem_1aa77c2a99c9aa91a9128308f4388446fa" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>createPosition</name></member>
+      <member refid="classQCPAbstractItem_1a0a1e77ebb53320522fb5f7fdd88f58f2" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>deselectEvent</name></member>
+      <member refid="classQCPAbstractItem_1acdca343717d625b8abb3c3e38c0ed39d" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>distSqrToLine</name></member>
+      <member refid="classQCPItemTracer_1a580b8ac6c894abcb56507d1a217db441" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>draw</name></member>
+      <member refid="classQCPItemTracer_1a74c90da0e6730839b8d7cf6445a4ec1f" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>graph</name></member>
+      <member refid="classQCPItemTracer_1a361c5c9b93bdf4588fc49bc3097529ad" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>graphKey</name></member>
+      <member refid="classQCPAbstractItem_1acbce9e5ba5252541d19db0c40303357a" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>hasAnchor</name></member>
+      <member refid="classQCPLayerable_1a8cbe5a0c9a5674249982f5ca5f8e02bc" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>initializeParentPlot</name></member>
+      <member refid="classQCPItemTracer_1ab318c233fa35c17a317af38ce7b3c312" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>interpolating</name></member>
+      <member refid="classQCPLayerable_1aea67e8c19145e70d68c286a36f6b8300" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>layer</name></member>
+      <member refid="classQCPLayerable_1abbf8657cedea73ac1c3499b521c90eba" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>layerChanged</name></member>
+      <member refid="classQCPItemTracer_1aaf4e72e2d87f53279b9f9ba624961bf5" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mainBrush</name></member>
+      <member refid="classQCPItemTracer_1af87132b7698d5bb35c96a8a0b9e7180e" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mainPen</name></member>
+      <member refid="classQCPAbstractItem_1a909a3abab783de302ebf0a0e6f2bbc15" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mAnchors</name></member>
+      <member refid="classQCPLayerable_1a3ab45a4c76a3333ce42eb217a81733ec" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mAntialiased</name></member>
+      <member refid="classQCPItemTracer_1a6597be63a17a266233941354200b2340" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mBrush</name></member>
+      <member refid="classQCPAbstractItem_1a3e57cfe7da4b1ac3d6fa7281ea437361" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mClipAxisRect</name></member>
+      <member refid="classQCPAbstractItem_1ad2a70ff6b658fcb84a9427f69d3f587d" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mClipToAxisRect</name></member>
+      <member refid="classQCPItemTracer_1a2d70cf616b579563aa15f796dfc143ac" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mGraph</name></member>
+      <member refid="classQCPItemTracer_1a8fa20f2e9ee07d21fd7c8d30ba4702ca" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mGraphKey</name></member>
+      <member refid="classQCPItemTracer_1afab37c22ad39f235921e86f93cd84595" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mInterpolating</name></member>
+      <member refid="classQCPLayerable_1aa38ec5891aff0f50b36fd63e9372a0cd" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mLayer</name></member>
+      <member refid="classQCPLayerable_1af94484cfb7cbbddb7de522e9be71d9a4" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>moveToLayer</name></member>
+      <member refid="classQCPLayerable_1a3291445a980053e2d17a21d15957624e" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mParentLayerable</name></member>
+      <member refid="classQCPLayerable_1aa2a528433e44db02b8aef23c1f9f90ed" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mParentPlot</name></member>
+      <member refid="classQCPItemTracer_1a579e3bd6bd16d6aaff03638dc8a99a69" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mPen</name></member>
+      <member refid="classQCPAbstractItem_1af94ff71b6a15ea6d028ab8bd8eccd012" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mPositions</name></member>
+      <member refid="classQCPAbstractItem_1ad81eb35c8726a0f458db9df9732e0e41" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mSelectable</name></member>
+      <member refid="classQCPAbstractItem_1a4bdb3457dad1d268c0f78a44152b9645" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mSelected</name></member>
+      <member refid="classQCPItemTracer_1a1c15d2adde40efdcc0ef1ff78fd256a6" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mSelectedBrush</name></member>
+      <member refid="classQCPItemTracer_1a3f61829784200819661d1e2a5354d866" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mSelectedPen</name></member>
+      <member refid="classQCPItemTracer_1a575153a24bb357d1e006f6bc3bd099b9" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mSize</name></member>
+      <member refid="classQCPItemTracer_1afb1f236bebf417544e0138fef22a292e" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mStyle</name></member>
+      <member refid="classQCPLayerable_1a62e3aed8427d6ce3ccf716f285106cb3" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>mVisible</name></member>
+      <member refid="classQCPLayerable_1aecaafc76ad8146d2a4d54837c5eada46" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>parentLayerable</name></member>
+      <member refid="classQCPLayerable_1ab7e0e94461566093d36ffc0f5312b109" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>parentPlot</name></member>
+      <member refid="classQCPLayerable_1ac504c8a0075c2fefbf941c4e599d218c" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>parentPlotInitialized</name></member>
+      <member refid="classQCPItemTracer_1a1f51b61e98c276298a0874d5e89707f0" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>pen</name></member>
+      <member refid="classQCPItemTracer_1a69917e2fdb2b3a929c196958feee7cbe" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>position</name></member>
+      <member refid="classQCPAbstractItem_1ad4f5360ef49161b2da76a019e7da3a3c" prot="public" virt="non-virtual" ambiguityscope="QCPAbstractItem::"><scope>QCPItemTracer</scope><name>position</name></member>
+      <member refid="classQCPAbstractItem_1a3f98af85e7cb0856c310da4db30f8337" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>positions</name></member>
+      <member refid="classQCPAbstractItem_1a9922507d8b4503a1fe1ed0b1030e23b6" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>QCPAbstractItem</name></member>
+      <member refid="classQCPItemTracer_1adc5ca846eeac323db4aa1fc4081e36be" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>QCPItemTracer</name></member>
+      <member refid="classQCPLayerable_1a74c0fa237f29bf0e49565013fc5d1ec0" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>QCPLayerable</name></member>
+      <member refid="classQCPLayerable_1a30809f7455e9794bca7b6c737622fa63" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>realVisibility</name></member>
+      <member refid="classQCPAbstractItem_1a4c0e14c4e92df91174cb7183fb363069" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>rectSelectTest</name></member>
+      <member refid="classQCPAbstractItem_1a9189e752025533e1595eaade0009a3bc" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>selectable</name></member>
+      <member refid="classQCPAbstractItem_1a5b266c11aac61cb511901f3911dac2a3" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>selectableChanged</name></member>
+      <member refid="classQCPAbstractItem_1a225865808640d8d9a7dd19f09a2e93f2" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>selected</name></member>
+      <member refid="classQCPItemTracer_1afed284222253083375bfd21d3d4dbc30" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>selectedBrush</name></member>
+      <member refid="classQCPItemTracer_1ad75e5d2d868dbedc176f7911091f379b" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>selectedPen</name></member>
+      <member refid="classQCPAbstractItem_1a9923a84d83df4d52360ac38a9176edc7" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>selectEvent</name></member>
+      <member refid="classQCPAbstractItem_1aa1ee5058fa2d5fc16037bee27e895c5e" prot="protected" virt="virtual"><scope>QCPItemTracer</scope><name>selectionCategory</name></member>
+      <member refid="classQCPAbstractItem_1aa5cffb034fc65dbb91c77e02c1c14251" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>selectionChanged</name></member>
+      <member refid="classQCPItemTracer_1a6eb61012f76de804f78c8af25ab4a755" prot="public" virt="virtual"><scope>QCPItemTracer</scope><name>selectTest</name></member>
+      <member refid="classQCPLayerable_1a4fd43e89be4a553ead41652565ff0581" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setAntialiased</name></member>
+      <member refid="classQCPItemTracer_1a2c303f7470a30084daa201ed556b3c36" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setBrush</name></member>
+      <member refid="classQCPAbstractItem_1a7dc75fcbcd10206fe0b75d757ea7a347" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setClipAxisRect</name></member>
+      <member refid="classQCPAbstractItem_1a39e05b9d4176b9accafc746d16ca6a06" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setClipToAxisRect</name></member>
+      <member refid="classQCPItemTracer_1af5886f4ded8dd68cb4f3388f390790c0" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setGraph</name></member>
+      <member refid="classQCPItemTracer_1a6840143b42f3b685cedf7c6d83a704c8" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setGraphKey</name></member>
+      <member refid="classQCPItemTracer_1a6c244a9d1175bef12b50afafd4f5fcd2" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setInterpolating</name></member>
+      <member refid="classQCPLayerable_1aea8c061ee8a1aa7ea88ee9ca9cbaa773" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setLayer</name></member>
+      <member refid="classQCPLayerable_1ab25a0e7b897993b44447caee0f142083" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setLayer</name></member>
+      <member refid="classQCPLayerable_1aa23c893671f1f6744ac235cf2204cf3a" prot="protected" virt="non-virtual"><scope>QCPItemTracer</scope><name>setParentLayerable</name></member>
+      <member refid="classQCPItemTracer_1af8048636fc1ef0152e51809b008df2ca" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setPen</name></member>
+      <member refid="classQCPAbstractItem_1ab36e93c24bc9817f08260e34a38a8759" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setSelectable</name></member>
+      <member refid="classQCPAbstractItem_1aa3d44aec4395fb95ee00e77dd13d8a39" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setSelected</name></member>
+      <member refid="classQCPItemTracer_1a0f55c084980a7a312af859d3e7b558ef" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setSelectedBrush</name></member>
+      <member refid="classQCPItemTracer_1ae1bf70db7f13f928660168cd3e5069f3" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setSelectedPen</name></member>
+      <member refid="classQCPItemTracer_1ae47fe0617f5fef5fdb766999569be10a" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setSize</name></member>
+      <member refid="classQCPItemTracer_1a41a2ac4f1acd7897b4e2a2579c03204e" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setStyle</name></member>
+      <member refid="classQCPLayerable_1a3bed99ddc396b48ce3ebfdc0418744f8" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>setVisible</name></member>
+      <member refid="classQCPItemTracer_1a2607fcb3d01e90773ea1532fd6803760" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>size</name></member>
+      <member refid="classQCPItemTracer_1a871832dace1709f877c3136fac7ae1ec" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>style</name></member>
+      <member refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>TracerStyle</name></member>
+      <member refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>tsCircle</name></member>
+      <member refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>tsCrosshair</name></member>
+      <member refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>tsNone</name></member>
+      <member refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>tsPlus</name></member>
+      <member refid="classQCPItemTracer_1a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>tsSquare</name></member>
+      <member refid="classQCPItemTracer_1a5b90296109e36384aedbc8908a670413" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>updatePosition</name></member>
+      <member refid="classQCPLayerable_1a10a3cc92e0fa63e4a929e61d34e275a7" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>visible</name></member>
+      <member refid="classQCPAbstractItem_1ae3d960806ef280f8515f29269aef4d6d" prot="public" virt="virtual"><scope>QCPItemTracer</scope><name>~QCPAbstractItem</name></member>
+      <member refid="classQCPItemTracer_1adac550cc52d94fbe65d670367d5c3e3e" prot="public" virt="virtual"><scope>QCPItemTracer</scope><name>~QCPItemTracer</name></member>
+      <member refid="classQCPLayerable_1a4231cf5b3601d6d3a5781283e7a9735b" prot="public" virt="non-virtual"><scope>QCPItemTracer</scope><name>~QCPLayerable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

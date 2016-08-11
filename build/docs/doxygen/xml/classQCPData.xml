@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCPData" kind="class" prot="public">
+    <compoundname>QCPData</compoundname>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classQCPData_1a2f5ba9aca61bb74f88516e148a4cf71b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPData::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2472" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPData_1aefe1ecf8fa2e34ed875b67523e542373" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPData::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2472" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPData_1ae468c3808107c2fd23052481156ab5b5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPData::keyErrorPlus</definition>
+        <argsstring></argsstring>
+        <name>keyErrorPlus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2473" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPData_1af107d650b8ee5c3b2961ecddcfb1bccb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPData::keyErrorMinus</definition>
+        <argsstring></argsstring>
+        <name>keyErrorMinus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2473" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPData_1ad26912552d03485ea20d91dcad16aa8f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPData::valueErrorPlus</definition>
+        <argsstring></argsstring>
+        <name>valueErrorPlus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2474" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPData_1a51d8f42bf4d49a1f263531e70cadd6a3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPData::valueErrorMinus</definition>
+        <argsstring></argsstring>
+        <name>valueErrorMinus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2474" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2474" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCPData_1a1f06d624e36ba0ed72ac36d42aa5c7ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPData::QCPData</definition>
+        <argsstring>()</argsstring>
+        <name>QCPData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2470" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPData_1aa274181ae8de2a0907ba5464d3c2c103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPData::QCPData</definition>
+        <argsstring>(double key, double value)</argsstring>
+        <name>QCPData</name>
+        <param>
+          <type>double</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2471" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2468" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2467" bodyend="2475"/>
+    <listofallmembers>
+      <member refid="classQCPData_1a2f5ba9aca61bb74f88516e148a4cf71b" prot="public" virt="non-virtual"><scope>QCPData</scope><name>key</name></member>
+      <member refid="classQCPData_1af107d650b8ee5c3b2961ecddcfb1bccb" prot="public" virt="non-virtual"><scope>QCPData</scope><name>keyErrorMinus</name></member>
+      <member refid="classQCPData_1ae468c3808107c2fd23052481156ab5b5" prot="public" virt="non-virtual"><scope>QCPData</scope><name>keyErrorPlus</name></member>
+      <member refid="classQCPData_1a1f06d624e36ba0ed72ac36d42aa5c7ee" prot="public" virt="non-virtual"><scope>QCPData</scope><name>QCPData</name></member>
+      <member refid="classQCPData_1aa274181ae8de2a0907ba5464d3c2c103" prot="public" virt="non-virtual"><scope>QCPData</scope><name>QCPData</name></member>
+      <member refid="classQCPData_1aefe1ecf8fa2e34ed875b67523e542373" prot="public" virt="non-virtual"><scope>QCPData</scope><name>value</name></member>
+      <member refid="classQCPData_1a51d8f42bf4d49a1f263531e70cadd6a3" prot="public" virt="non-virtual"><scope>QCPData</scope><name>valueErrorMinus</name></member>
+      <member refid="classQCPData_1ad26912552d03485ea20d91dcad16aa8f" prot="public" virt="non-virtual"><scope>QCPData</scope><name>valueErrorPlus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

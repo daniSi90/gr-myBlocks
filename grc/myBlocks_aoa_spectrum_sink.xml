@@ -1,0 +1,39 @@
+<block>
+  <name>Aoa spectrum sink</name>
+  <key>myBlocks_aoa_spectrum_sink</key>
+  <category>[MYBLOCKS]</category>
+  <import>import myBlocks</import>
+  <make>myBlocks.aoa_spectrum_sink($vlen, $array, $fc, $treshold)</make>
+  <param>
+    <name>Vlen</name>
+    <key>vlen</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Array</name>
+    <key>array</key>
+    <type>real_vector</type>
+  </param>
+  <param>
+    <name>Fc</name>
+    <key>fc</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Treshold</name>
+    <key>treshold</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Num_inputs</name>
+    <key>num_inputs</key>
+    <value>2</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$vlen</vlen>
+    <nports>$num_inputs</nports>
+  </sink>
+</block>

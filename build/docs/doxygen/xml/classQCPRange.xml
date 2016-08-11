@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCPRange" kind="class" prot="public">
+    <compoundname>QCPRange</compoundname>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classQCPRange_1aa3aca3edb14f7ca0c85d912647b91745" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPRange::lower</definition>
+        <argsstring></argsstring>
+        <name>lower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="479" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="479" bodyend="-1"/>
+        <referencedby refid="classQCPRange_1aa20f91509687505e25bd2ef10d2f0e15" compoundref="qcustomplot_8h" startline="484" endline="484">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPRange_1ae44eb3aafe1d0e2ed34b499b6d2e074f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPRange::upper</definition>
+        <argsstring></argsstring>
+        <name>upper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="479" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="479" bodyend="-1"/>
+        <referencedby refid="classQCPRange_1aa20f91509687505e25bd2ef10d2f0e15" compoundref="qcustomplot_8h" startline="484" endline="484">operator==</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classQCPRange_1ab46d3bc95030ee25efda41b89e2b616b" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double QCPRange::minRange</definition>
+        <argsstring></argsstring>
+        <name>minRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="509" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPRange_1a5ca51e7a2dc5dc0d49527ab171fe1f4f" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double QCPRange::maxRange</definition>
+        <argsstring></argsstring>
+        <name>maxRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="510" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCPRange_1aca158d7e69702cee5d77d10a269b01e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPRange::QCPRange</definition>
+        <argsstring>()</argsstring>
+        <name>QCPRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="481" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a1d9d84d084c8f368fdedd42e0978d405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPRange::QCPRange</definition>
+        <argsstring>(double lower, double upper)</argsstring>
+        <name>QCPRange</name>
+        <param>
+          <type>double</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="482" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1aa20f91509687505e25bd2ef10d2f0e15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPRange::operator==</definition>
+        <argsstring>(const QCPRange &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="484" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="484" bodyend="484"/>
+        <references refid="classQCPRange_1aa3aca3edb14f7ca0c85d912647b91745" compoundref="qcustomplot_8h" startline="479">lower</references>
+        <references refid="classQCPRange_1ae44eb3aafe1d0e2ed34b499b6d2e074f" compoundref="qcustomplot_8h" startline="479">upper</references>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a9b9016ee83dea60573abb9a5ef4cdbcb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPRange::operator!=</definition>
+        <argsstring>(const QCPRange &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="485" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="485" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1afea7c1aa7d08f061cd9bd8832f957df8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+        <definition>QCPRange &amp; QCPRange::operator+=</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds <emphasis>value</emphasis> to both boundaries of the range. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="487" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="487" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a95894bcb15a16a75ca564091374e2191" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+        <definition>QCPRange &amp; QCPRange::operator-=</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtracts <emphasis>value</emphasis> from both boundaries of the range. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="488" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="488" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a6876aa9620ff2f0f7f1873f998372cef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+        <definition>QCPRange &amp; QCPRange::operator*=</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplies both boundaries of the range by <emphasis>value</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="489" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="489" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a6137d8682b6835ace840730b4c1e2d63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+        <definition>QCPRange &amp; QCPRange::operator/=</definition>
+        <argsstring>(const double &amp;value)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Divides both boundaries of the range by <emphasis>value</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="490" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="490" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1afa57c13049b965edb6fd1c00ac56338a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPRange::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="498" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a3825b53cf17da5de0843c1f3baad07db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPRange::center</definition>
+        <argsstring>() const </argsstring>
+        <name>center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="499" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1af914a7740269b0604d0827c634a878a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPRange::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="500" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a0fa1bc8048be50d52bea93a8caf08305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPRange::expand</definition>
+        <argsstring>(const QCPRange &amp;otherRange)</argsstring>
+        <name>expand</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>otherRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="501" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a6437bdf29a7ebc2c88a6045c4e622384" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>QCPRange QCPRange::expanded</definition>
+        <argsstring>(const QCPRange &amp;otherRange) const </argsstring>
+        <name>expanded</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>otherRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="502" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1aaf6a9046e78d91eeb8e89584fe46b034" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>QCPRange QCPRange::sanitizedForLogScale</definition>
+        <argsstring>() const </argsstring>
+        <name>sanitizedForLogScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="503" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a1ff029704c29a75adbc1dc36cecaf44c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>QCPRange QCPRange::sanitizedForLinScale</definition>
+        <argsstring>() const </argsstring>
+        <name>sanitizedForLinScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="504" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a030ce95b527c32e01414d0351347b46d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPRange::contains</definition>
+        <argsstring>(double value) const </argsstring>
+        <name>contains</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="505" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classQCPRange_1af53ea6fb823a4a5897162b865841de04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend const <ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>const QCPRange operator+</definition>
+        <argsstring>(const QCPRange &amp;, double)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <defname>range</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds <emphasis>value</emphasis> to both boundaries of the range. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="491" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="542" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCPRange_1a9fb2e9941d32001482df670c0d704977" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend const <ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>const QCPRange operator+</definition>
+        <argsstring>(double, const QCPRange &amp;)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>double</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <defname>range</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds <emphasis>value</emphasis> to both boundaries of the range. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="492" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="552" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCPRange_1a797f82830b516646da8873f82e39e356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend const <ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>const QCPRange operator-</definition>
+        <argsstring>(const QCPRange &amp;range, double value)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtracts <emphasis>value</emphasis> from both boundaries of the range. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="493" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="562" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCPRange_1a558b1248ff6a9e41fd5b2630555a8acc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend const <ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>const QCPRange operator*</definition>
+        <argsstring>(const QCPRange &amp;range, double value)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplies both boundaries of the range by <emphasis>value</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="494" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="572" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCPRange_1a5cb2332f6957021f47cc768089f4f090" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend const <ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>const QCPRange operator*</definition>
+        <argsstring>(double value, const QCPRange &amp;range)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplies both boundaries of the range by <emphasis>value</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="495" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="582" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="friend" id="classQCPRange_1a4b366a3a21974c88e09b0d39d4a24a4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend const <ref refid="classQCPRange" kindref="compound">QCPRange</ref></type>
+        <definition>const QCPRange operator/</definition>
+        <argsstring>(const QCPRange &amp;range, double value)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Divides both boundaries of the range by <emphasis>value</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="496" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="592" bodyend="597"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classQCPRange_1a50f6401a622e5bf55a9f5dc11778ec84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool QCPRange::validRange</definition>
+        <argsstring>(double lower, double upper)</argsstring>
+        <name>validRange</name>
+        <param>
+          <type>double</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="507" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPRange_1a34be594ed3425caf7ad99e957f471186" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool QCPRange::validRange</definition>
+        <argsstring>(const QCPRange &amp;range)</argsstring>
+        <name>validRange</name>
+        <param>
+          <type>const <ref refid="classQCPRange" kindref="compound">QCPRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="508" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="477" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="476" bodyend="512"/>
+    <listofallmembers>
+      <member refid="classQCPRange_1a3825b53cf17da5de0843c1f3baad07db" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>center</name></member>
+      <member refid="classQCPRange_1a030ce95b527c32e01414d0351347b46d" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>contains</name></member>
+      <member refid="classQCPRange_1a0fa1bc8048be50d52bea93a8caf08305" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>expand</name></member>
+      <member refid="classQCPRange_1a6437bdf29a7ebc2c88a6045c4e622384" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>expanded</name></member>
+      <member refid="classQCPRange_1aa3aca3edb14f7ca0c85d912647b91745" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>lower</name></member>
+      <member refid="classQCPRange_1a5ca51e7a2dc5dc0d49527ab171fe1f4f" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>maxRange</name></member>
+      <member refid="classQCPRange_1ab46d3bc95030ee25efda41b89e2b616b" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>minRange</name></member>
+      <member refid="classQCPRange_1af914a7740269b0604d0827c634a878a9" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>normalize</name></member>
+      <member refid="classQCPRange_1a9b9016ee83dea60573abb9a5ef4cdbcb" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator!=</name></member>
+      <member refid="classQCPRange_1a558b1248ff6a9e41fd5b2630555a8acc" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator*</name></member>
+      <member refid="classQCPRange_1a5cb2332f6957021f47cc768089f4f090" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator*</name></member>
+      <member refid="classQCPRange_1a6876aa9620ff2f0f7f1873f998372cef" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator*=</name></member>
+      <member refid="classQCPRange_1af53ea6fb823a4a5897162b865841de04" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator+</name></member>
+      <member refid="classQCPRange_1a9fb2e9941d32001482df670c0d704977" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator+</name></member>
+      <member refid="classQCPRange_1afea7c1aa7d08f061cd9bd8832f957df8" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator+=</name></member>
+      <member refid="classQCPRange_1a797f82830b516646da8873f82e39e356" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator-</name></member>
+      <member refid="classQCPRange_1a95894bcb15a16a75ca564091374e2191" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator-=</name></member>
+      <member refid="classQCPRange_1a4b366a3a21974c88e09b0d39d4a24a4b" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator/</name></member>
+      <member refid="classQCPRange_1a6137d8682b6835ace840730b4c1e2d63" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator/=</name></member>
+      <member refid="classQCPRange_1aa20f91509687505e25bd2ef10d2f0e15" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>operator==</name></member>
+      <member refid="classQCPRange_1aca158d7e69702cee5d77d10a269b01e2" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>QCPRange</name></member>
+      <member refid="classQCPRange_1a1d9d84d084c8f368fdedd42e0978d405" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>QCPRange</name></member>
+      <member refid="classQCPRange_1a1ff029704c29a75adbc1dc36cecaf44c" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>sanitizedForLinScale</name></member>
+      <member refid="classQCPRange_1aaf6a9046e78d91eeb8e89584fe46b034" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>sanitizedForLogScale</name></member>
+      <member refid="classQCPRange_1afa57c13049b965edb6fd1c00ac56338a" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>size</name></member>
+      <member refid="classQCPRange_1ae44eb3aafe1d0e2ed34b499b6d2e074f" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>upper</name></member>
+      <member refid="classQCPRange_1a50f6401a622e5bf55a9f5dc11778ec84" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>validRange</name></member>
+      <member refid="classQCPRange_1a34be594ed3425caf7ad99e957f471186" prot="public" virt="non-virtual"><scope>QCPRange</scope><name>validRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

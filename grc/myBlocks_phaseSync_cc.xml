@@ -1,0 +1,29 @@
+<block>
+  <name>Complex PhaseSync</name>
+  <key>myBlocks_phaseSync_cc</key>
+  <category>[MYBLOCKS]</category>
+  <import>import myBlocks</import>
+  <make>myBlocks.phaseSync_cc()</make>
+  <param>
+    <name>Num Of Inputs</name>
+    <key>num_inputs</key>
+    <value>4</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Num Of Outputs</name>
+    <key>num_outputs</key>
+    <value>4</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <nports>$num_inputs</nports>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <nports>$num_outputs</nports>
+  </source>
+</block>

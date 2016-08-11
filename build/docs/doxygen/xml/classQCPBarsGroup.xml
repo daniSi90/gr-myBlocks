@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCPBarsGroup" kind="class" prot="public">
+    <compoundname>QCPBarsGroup</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6" prot="public" static="no">
+        <name>SpacingType</name>
+        <enumvalue id="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac" prot="public">
+          <name>stAbsolute</name>
+          <briefdescription>
+<para>Bar spacing is in absolute pixels. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6ae94b05c27bc985dcdd8b1e1b7f163d26" prot="public">
+          <name>stAxisRectRatio</name>
+          <briefdescription>
+<para>Bar spacing is given by a fraction of the axis rect size. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6ad369cee6287e0a86e8c2b643a3168c54" prot="public">
+          <name>stPlotCoords</name>
+          <briefdescription>
+<para>Bar spacing is in key coordinates and thus scales with the key axis range. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the ways the spacing between bars in the group can be specified. Thus it defines what the number passed to <ref refid="classQCPBarsGroup_1aa553d327479d72a0c3dafcc724a190e2" kindref="member">setSpacing</ref> actually means.</para><para><simplesect kind="see"><para><ref refid="classQCPBarsGroup_1a2c7e2d61b10594a4555b615e1fcaf49e" kindref="member">setSpacingType</ref>, <ref refid="classQCPBarsGroup_1aa553d327479d72a0c3dafcc724a190e2" kindref="member">setSpacing</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2754" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2754" bodyend="2757"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQCPBarsGroup_1a973d408cfbf88db95115aec71877f9e7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCustomPlot" kindref="compound">QCustomPlot</ref> *</type>
+        <definition>QCustomPlot* QCPBarsGroup::mParentPlot</definition>
+        <argsstring></argsstring>
+        <name>mParentPlot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2782" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPBarsGroup_1a6794ee1a9c81864d627bff6a4b2d64ec" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6" kindref="member">SpacingType</ref></type>
+        <definition>SpacingType QCPBarsGroup::mSpacingType</definition>
+        <argsstring></argsstring>
+        <name>mSpacingType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2783" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPBarsGroup_1a56471d7f548ca6141b7a5bf9629f7ece" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPBarsGroup::mSpacing</definition>
+        <argsstring></argsstring>
+        <name>mSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2784" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPBarsGroup_1affdb1e9233c277ff5a4c0a1121cf1fc0" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="classQCPBars" kindref="compound">QCPBars</ref> * &gt;</type>
+        <definition>QList&lt;QCPBars*&gt; QCPBarsGroup::mBars</definition>
+        <argsstring></argsstring>
+        <name>mBars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2785" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2785" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classQCPBarsGroup_1a721b87c7cdb8e83a90d77fc8a22e7195" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class QCPBars</definition>
+        <argsstring></argsstring>
+        <name>QCPBars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2798" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2798" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCPBarsGroup_1aa4e043b9a22c6c5ea0f93740aca063e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPBarsGroup::QCPBarsGroup</definition>
+        <argsstring>(QCustomPlot *parentPlot)</argsstring>
+        <name>QCPBarsGroup</name>
+        <param>
+          <type><ref refid="classQCustomPlot" kindref="compound">QCustomPlot</ref> *</type>
+          <declname>parentPlot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2758" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1adb9475bcb6a5f18c8918e17d939d8dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPBarsGroup::~QCPBarsGroup</definition>
+        <argsstring>()</argsstring>
+        <name>~QCPBarsGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2759" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a1bb562f669d47bd7d3cdd2da1f7d8f00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6" kindref="member">SpacingType</ref></type>
+        <definition>SpacingType QCPBarsGroup::spacingType</definition>
+        <argsstring>() const </argsstring>
+        <name>spacingType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2762" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2762" bodyend="2762"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a730bffefcac6c97aaf60e6f64dd3bcd9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPBarsGroup::spacing</definition>
+        <argsstring>() const </argsstring>
+        <name>spacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2763" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2763" bodyend="2763"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a2c7e2d61b10594a4555b615e1fcaf49e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::setSpacingType</definition>
+        <argsstring>(SpacingType spacingType)</argsstring>
+        <name>setSpacingType</name>
+        <param>
+          <type><ref refid="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6" kindref="member">SpacingType</ref></type>
+          <declname>spacingType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2766" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1aa553d327479d72a0c3dafcc724a190e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::setSpacing</definition>
+        <argsstring>(double spacing)</argsstring>
+        <name>setSpacing</name>
+        <param>
+          <type>double</type>
+          <declname>spacing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2767" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a2e8766bf5d4e101444515df96ab490bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QList&lt; <ref refid="classQCPBars" kindref="compound">QCPBars</ref> * &gt;</type>
+        <definition>QList&lt;QCPBars*&gt; QCPBarsGroup::bars</definition>
+        <argsstring>() const </argsstring>
+        <name>bars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2770" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2770" bodyend="2770"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a8ef27c3c7fbf2a8773e4939535a3d9cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+        <definition>QCPBars* QCPBarsGroup::bars</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>bars</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2771" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1af07364189c5717a158ec95b609687532" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int QCPBarsGroup::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2772" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2772" bodyend="2772"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a1d89da4e9176f4f77105e9a4afd44e2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPBarsGroup::isEmpty</definition>
+        <argsstring>() const </argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2773" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2773" bodyend="2773"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a3ddf23928c6cd89530bd34ab7ba7b177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2774" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1adb4837894167e629e42e200db056fac3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPBarsGroup::contains</definition>
+        <argsstring>(QCPBars *bars) const </argsstring>
+        <name>contains</name>
+        <param>
+          <type><ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2775" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2775" bodyend="2775"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a809ed63cc4ff7cd5b0b8c96b470163d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::append</definition>
+        <argsstring>(QCPBars *bars)</argsstring>
+        <name>append</name>
+        <param>
+          <type><ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2776" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a309a5f7233db189f3ea9c2d04ece6c13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::insert</definition>
+        <argsstring>(int i, QCPBars *bars)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2777" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a215e28a5944f1159013a0e19169220e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::remove</definition>
+        <argsstring>(QCPBars *bars)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2778" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQCPBarsGroup_1a7b00514f19ad58d0bb3fd5246a67fae2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::registerBars</definition>
+        <argsstring>(QCPBars *bars)</argsstring>
+        <name>registerBars</name>
+        <param>
+          <type><ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2788" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1ac7073cdd7b1a40c6cb4b5f908145f8c4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPBarsGroup::unregisterBars</definition>
+        <argsstring>(QCPBars *bars)</argsstring>
+        <name>unregisterBars</name>
+        <param>
+          <type><ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2789" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a8e2ca6002e7bab49670144d048a2bcc9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPBarsGroup::keyPixelOffset</definition>
+        <argsstring>(const QCPBars *bars, double keyCoord)</argsstring>
+        <name>keyPixelOffset</name>
+        <param>
+          <type>const <ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>keyCoord</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2792" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPBarsGroup_1a0beccd41bc3841a4c5b284823bc7d2de" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPBarsGroup::getPixelSpacing</definition>
+        <argsstring>(const QCPBars *bars, double keyCoord)</argsstring>
+        <name>getPixelSpacing</name>
+        <param>
+          <type>const <ref refid="classQCPBars" kindref="compound">QCPBars</ref> *</type>
+          <declname>bars</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>keyCoord</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2793" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="185">
+        <label>QObject</label>
+      </node>
+      <node id="184">
+        <label>QCPBarsGroup</label>
+        <link refid="classQCPBarsGroup"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="201">
+        <label>QCPLayoutInset</label>
+        <link refid="classQCPLayoutInset"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>QCPLayoutElement</label>
+        <link refid="classQCPLayoutElement"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+        <childnode refid="192" relation="usage">
+          <edgelabel>mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="187">
+        <label>QObject</label>
+      </node>
+      <node id="196">
+        <label>QCPRange</label>
+        <link refid="classQCPRange"/>
+      </node>
+      <node id="202">
+        <label>QCPLegend</label>
+        <link refid="classQCPLegend"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>QCPLineEnding</label>
+        <link refid="classQCPLineEnding"/>
+      </node>
+      <node id="186">
+        <label>QCPBarsGroup</label>
+        <link refid="classQCPBarsGroup"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="192">
+        <label>QCPLayout</label>
+        <link refid="classQCPLayout"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>QCPGrid</label>
+        <link refid="classQCPGrid"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+        <childnode refid="195" relation="usage">
+          <edgelabel>mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="197">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="classQCPAxisPainterPrivate"/>
+        <childnode refid="198" relation="usage">
+          <edgelabel>lowerEnding</edgelabel>
+          <edgelabel>upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="189">
+        <label>QWidget</label>
+      </node>
+      <node id="190">
+        <label>QCPLayer</label>
+        <link refid="classQCPLayer"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="191">
+        <label>QCPLayoutGrid</label>
+        <link refid="classQCPLayoutGrid"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>QCPLayerable</label>
+        <link refid="classQCPLayerable"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="190" relation="usage">
+          <edgelabel>mLayer</edgelabel>
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="195">
+        <label>QCPAxis</label>
+        <link refid="classQCPAxis"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+        <childnode refid="196" relation="usage">
+          <edgelabel>mRange</edgelabel>
+        </childnode>
+        <childnode refid="197" relation="usage">
+          <edgelabel>mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="199" relation="usage">
+          <edgelabel>mGrid</edgelabel>
+        </childnode>
+        <childnode refid="200" relation="usage">
+          <edgelabel>mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="200">
+        <label>QCPAxisRect</label>
+        <link refid="classQCPAxisRect"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+        <childnode refid="201" relation="usage">
+          <edgelabel>mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="196" relation="usage">
+          <edgelabel>mDragStartVertRange</edgelabel>
+          <edgelabel>mDragStartHorzRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>QCustomPlot</label>
+        <link refid="classQCustomPlot"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+        <childnode refid="190" relation="usage">
+          <edgelabel>mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="191" relation="usage">
+          <edgelabel>mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="195" relation="usage">
+          <edgelabel>yAxis2</edgelabel>
+          <edgelabel>xAxis2</edgelabel>
+          <edgelabel>xAxis</edgelabel>
+          <edgelabel>yAxis</edgelabel>
+        </childnode>
+        <childnode refid="202" relation="usage">
+          <edgelabel>legend</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="2741" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="2740" bodyend="2799"/>
+    <listofallmembers>
+      <member refid="classQCPBarsGroup_1a809ed63cc4ff7cd5b0b8c96b470163d3" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>append</name></member>
+      <member refid="classQCPBarsGroup_1a2e8766bf5d4e101444515df96ab490bf" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>bars</name></member>
+      <member refid="classQCPBarsGroup_1a8ef27c3c7fbf2a8773e4939535a3d9cc" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>bars</name></member>
+      <member refid="classQCPBarsGroup_1a3ddf23928c6cd89530bd34ab7ba7b177" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>clear</name></member>
+      <member refid="classQCPBarsGroup_1adb4837894167e629e42e200db056fac3" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>contains</name></member>
+      <member refid="classQCPBarsGroup_1a0beccd41bc3841a4c5b284823bc7d2de" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>getPixelSpacing</name></member>
+      <member refid="classQCPBarsGroup_1a309a5f7233db189f3ea9c2d04ece6c13" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>insert</name></member>
+      <member refid="classQCPBarsGroup_1a1d89da4e9176f4f77105e9a4afd44e2b" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>isEmpty</name></member>
+      <member refid="classQCPBarsGroup_1a8e2ca6002e7bab49670144d048a2bcc9" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>keyPixelOffset</name></member>
+      <member refid="classQCPBarsGroup_1affdb1e9233c277ff5a4c0a1121cf1fc0" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>mBars</name></member>
+      <member refid="classQCPBarsGroup_1a973d408cfbf88db95115aec71877f9e7" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>mParentPlot</name></member>
+      <member refid="classQCPBarsGroup_1a56471d7f548ca6141b7a5bf9629f7ece" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>mSpacing</name></member>
+      <member refid="classQCPBarsGroup_1a6794ee1a9c81864d627bff6a4b2d64ec" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>mSpacingType</name></member>
+      <member refid="classQCPBarsGroup_1a721b87c7cdb8e83a90d77fc8a22e7195" prot="private" virt="non-virtual"><scope>QCPBarsGroup</scope><name>QCPBars</name></member>
+      <member refid="classQCPBarsGroup_1aa4e043b9a22c6c5ea0f93740aca063e1" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>QCPBarsGroup</name></member>
+      <member refid="classQCPBarsGroup_1a7b00514f19ad58d0bb3fd5246a67fae2" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>registerBars</name></member>
+      <member refid="classQCPBarsGroup_1a215e28a5944f1159013a0e19169220e7" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>remove</name></member>
+      <member refid="classQCPBarsGroup_1aa553d327479d72a0c3dafcc724a190e2" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>setSpacing</name></member>
+      <member refid="classQCPBarsGroup_1a2c7e2d61b10594a4555b615e1fcaf49e" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>setSpacingType</name></member>
+      <member refid="classQCPBarsGroup_1af07364189c5717a158ec95b609687532" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>size</name></member>
+      <member refid="classQCPBarsGroup_1a730bffefcac6c97aaf60e6f64dd3bcd9" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>spacing</name></member>
+      <member refid="classQCPBarsGroup_1a1bb562f669d47bd7d3cdd2da1f7d8f00" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>spacingType</name></member>
+      <member refid="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>SpacingType</name></member>
+      <member refid="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6ab53fa3efaf14867dd0f14d41d64e42ac" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>stAbsolute</name></member>
+      <member refid="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6ae94b05c27bc985dcdd8b1e1b7f163d26" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>stAxisRectRatio</name></member>
+      <member refid="classQCPBarsGroup_1a4c0521120a97e60bbca37677a37075b6ad369cee6287e0a86e8c2b643a3168c54" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>stPlotCoords</name></member>
+      <member refid="classQCPBarsGroup_1ac7073cdd7b1a40c6cb4b5f908145f8c4" prot="protected" virt="non-virtual"><scope>QCPBarsGroup</scope><name>unregisterBars</name></member>
+      <member refid="classQCPBarsGroup_1adb9475bcb6a5f18c8918e17d939d8dbd" prot="public" virt="non-virtual"><scope>QCPBarsGroup</scope><name>~QCPBarsGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

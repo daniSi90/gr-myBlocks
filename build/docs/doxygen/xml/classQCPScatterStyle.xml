@@ -1,0 +1,736 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCPScatterStyle" kind="class" prot="public">
+    <compoundname>QCPScatterStyle</compoundname>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" prot="public" static="no">
+        <name>ScatterShape</name>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349abd144c291ca274f77053ec68cab6c022" prot="public">
+          <name>ssNone</name>
+          <briefdescription>
+<para>no scatter symbols are drawn (e.g. in <ref refid="classQCPGraph" kindref="compound">QCPGraph</ref>, data only represented with lines) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a06e15a735b79093a1d999c0374fa3aa1" prot="public">
+          <name>ssDot</name>
+          <briefdescription>
+<para>{ssDot.png} a single pixel (use <ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a281fe1434696dcbab3aa6b9ccfbb09e9" kindref="member">ssDisc</ref> or <ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a7c92a110880d0ef2170dff3a5b4f7779" kindref="member">ssCircle</ref> if you want a round shape with a certain radius) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a9eacd60f059dc3ef71bf249f515a6fe4" prot="public">
+          <name>ssCross</name>
+          <briefdescription>
+<para>{ssCross.png} a cross </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a2d7f1d3c1a148b9d9d17f2fd9cae5eb7" prot="public">
+          <name>ssPlus</name>
+          <briefdescription>
+<para>{ssPlus.png} a plus </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a7c92a110880d0ef2170dff3a5b4f7779" prot="public">
+          <name>ssCircle</name>
+          <briefdescription>
+<para>{ssCircle.png} a circle </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a281fe1434696dcbab3aa6b9ccfbb09e9" prot="public">
+          <name>ssDisc</name>
+          <briefdescription>
+<para>{ssDisc.png} a circle which is filled with the pen&apos;s color (not the brush as with ssCircle) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a279e48703ddc9f1cf4a61d3e2817ab3c" prot="public">
+          <name>ssSquare</name>
+          <briefdescription>
+<para>{ssSquare.png} a square </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a4fc5929df1b2dad0a3cb2ef2c8b6e633" prot="public">
+          <name>ssDiamond</name>
+          <briefdescription>
+<para>{ssDiamond.png} a diamond </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a6047a2d64e41f1d6ce54445d595d442f" prot="public">
+          <name>ssStar</name>
+          <briefdescription>
+<para>{ssStar.png} a star with eight arms, i.e. a combination of cross and plus </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a74a8d4eff1d97b57c53a60d0003453c3" prot="public">
+          <name>ssTriangle</name>
+          <briefdescription>
+<para>{ssTriangle.png} an equilateral triangle, standing on baseline </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a6156274d21d8b4115197567d3ea2d9a8" prot="public">
+          <name>ssTriangleInverted</name>
+          <briefdescription>
+<para>{ssTriangleInverted.png} an equilateral triangle, standing on corner </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a7081310936c200c6c78e34c172f72d07" prot="public">
+          <name>ssCrossSquare</name>
+          <briefdescription>
+<para>{ssCrossSquare.png} a square with a cross inside </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a5aa8e9db545e5404482fec774768ee25" prot="public">
+          <name>ssPlusSquare</name>
+          <briefdescription>
+<para>{ssPlusSquare.png} a square with a plus inside </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a524613ba5d1c4eaa1541d74cf339d283" prot="public">
+          <name>ssCrossCircle</name>
+          <briefdescription>
+<para>{ssCrossCircle.png} a circle with a cross inside </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a6fa151d01f1694c9ff9922da686dc535" prot="public">
+          <name>ssPlusCircle</name>
+          <briefdescription>
+<para>{ssPlusCircle.png} a circle with a plus inside </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349ada3b2988ece38c121922a4b5007eb08d" prot="public">
+          <name>ssPeace</name>
+          <briefdescription>
+<para>{ssPeace.png} a circle, with one vertical and two downward diagonal lines </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a8718b849ca7c307b07b8e091efb0c31e" prot="public">
+          <name>ssPixmap</name>
+          <briefdescription>
+<para>a custom pixmap specified by <ref refid="classQCPScatterStyle_1a5fb611d46acfac520d7b89a1c71d9246" kindref="member">setPixmap</ref>, centered on the data point coordinates </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a15d9bcfd9de94edda949006529f9219d" prot="public">
+          <name>ssCustom</name>
+          <briefdescription>
+<para>custom painter operations are performed per scatter (As QPainterPath, see <ref refid="classQCPScatterStyle_1a96a3e949f90b2afe5677ca9412a12a1e" kindref="member">setCustomPath</ref>) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the shape used for scatter points.</para><para>On plottables/items that draw scatters, the sizes of these visualizations (with exception of <ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a06e15a735b79093a1d999c0374fa3aa1" kindref="member">ssDot</ref> and <ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a8718b849ca7c307b07b8e091efb0c31e" kindref="member">ssPixmap</ref>) can be controlled with the <ref refid="classQCPScatterStyle_1aaefdd031052892c4136129db68596e0f" kindref="member">setSize</ref> function. Scatters are drawn with the pen and brush specified with <ref refid="classQCPScatterStyle_1a761f1f229cc0ca4703e1e2b89f6dd1ba" kindref="member">setPen</ref> and <ref refid="classQCPScatterStyle_1a74d692aaeb8d4b36d6f7d510e44264b1" kindref="member">setBrush</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="246" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="246" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQCPScatterStyle_1a757da98671eb06b221979373ac2cec91" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPScatterStyle::mSize</definition>
+        <argsstring></argsstring>
+        <name>mSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="299" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPScatterStyle_1af1b327f35f107ed108290187bbc8c7c6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" kindref="member">ScatterShape</ref></type>
+        <definition>ScatterShape QCPScatterStyle::mShape</definition>
+        <argsstring></argsstring>
+        <name>mShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="300" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPScatterStyle_1a0f6a85e6d1e3ae1ca1b6efb4d4cdfe17" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPScatterStyle::mPen</definition>
+        <argsstring></argsstring>
+        <name>mPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="301" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPScatterStyle_1a1b9c6ab10aebcaf236f1f45d1d6d64d1" prot="protected" static="no" mutable="no">
+        <type>QBrush</type>
+        <definition>QBrush QCPScatterStyle::mBrush</definition>
+        <argsstring></argsstring>
+        <name>mBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="302" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPScatterStyle_1a7697346c89b19d4cd1d8dd33319ec9e3" prot="protected" static="no" mutable="no">
+        <type>QPixmap</type>
+        <definition>QPixmap QCPScatterStyle::mPixmap</definition>
+        <argsstring></argsstring>
+        <name>mPixmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="303" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPScatterStyle_1a813cb074744dc5a2f59cc99d6a10c6f0" prot="protected" static="no" mutable="no">
+        <type>QPainterPath</type>
+        <definition>QPainterPath QCPScatterStyle::mCustomPath</definition>
+        <argsstring></argsstring>
+        <name>mCustomPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="304" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPScatterStyle_1a84ef5aa591ddba07b440f597e1669e78" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPScatterStyle::mPenDefined</definition>
+        <argsstring></argsstring>
+        <name>mPenDefined</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="307" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCPScatterStyle_1a8836018d9ad83ccd8870de8315c1be73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPScatterStyle::QCPScatterStyle</definition>
+        <argsstring>()</argsstring>
+        <name>QCPScatterStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a003d92f74f4561eda111862eadd62f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPScatterStyle::QCPScatterStyle</definition>
+        <argsstring>(ScatterShape shape, double size=6)</argsstring>
+        <name>QCPScatterStyle</name>
+        <param>
+          <type><ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" kindref="member">ScatterShape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1afa059da858c864c7e05871dc602d7eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPScatterStyle::QCPScatterStyle</definition>
+        <argsstring>(ScatterShape shape, const QColor &amp;color, double size)</argsstring>
+        <name>QCPScatterStyle</name>
+        <param>
+          <type><ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" kindref="member">ScatterShape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a6e1b64f12cac7f07af180ae4316fd38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPScatterStyle::QCPScatterStyle</definition>
+        <argsstring>(ScatterShape shape, const QColor &amp;color, const QColor &amp;fill, double size)</argsstring>
+        <name>QCPScatterStyle</name>
+        <param>
+          <type><ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" kindref="member">ScatterShape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>fill</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a85acc4941d7e5c9bca5fa51377a77f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPScatterStyle::QCPScatterStyle</definition>
+        <argsstring>(ScatterShape shape, const QPen &amp;pen, const QBrush &amp;brush, double size)</argsstring>
+        <name>QCPScatterStyle</name>
+        <param>
+          <type><ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" kindref="member">ScatterShape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a63962094587a4c2258435aa7933996cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPScatterStyle::QCPScatterStyle</definition>
+        <argsstring>(const QPixmap &amp;pixmap)</argsstring>
+        <name>QCPScatterStyle</name>
+        <param>
+          <type>const QPixmap &amp;</type>
+          <declname>pixmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a879c30647683b3cfbde2afecea815e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPScatterStyle::QCPScatterStyle</definition>
+        <argsstring>(const QPainterPath &amp;customPath, const QPen &amp;pen, const QBrush &amp;brush=Qt::NoBrush, double size=6)</argsstring>
+        <name>QCPScatterStyle</name>
+        <param>
+          <type>const QPainterPath &amp;</type>
+          <declname>customPath</declname>
+        </param>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+          <defval>Qt::NoBrush</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a1973ee650368f1c5f55507b78473f634" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPScatterStyle::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="275" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="275" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a4462a25ef17769631f4e0aa81dadca4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" kindref="member">ScatterShape</ref></type>
+        <definition>ScatterShape QCPScatterStyle::shape</definition>
+        <argsstring>() const </argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="276" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="276" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a3c24c3bf37b561b4807aed9f1418ab58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPScatterStyle::pen</definition>
+        <argsstring>() const </argsstring>
+        <name>pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="277" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="277" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a46bf481d84bfa31b287dd43a3bf86d37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QBrush</type>
+        <definition>QBrush QCPScatterStyle::brush</definition>
+        <argsstring>() const </argsstring>
+        <name>brush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="278" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a9bab44cc41fcd585621a4b3e0e48231b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPixmap</type>
+        <definition>QPixmap QCPScatterStyle::pixmap</definition>
+        <argsstring>() const </argsstring>
+        <name>pixmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="279" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="279" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a4dd4998dfb0d6889205668a06c790328" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath QCPScatterStyle::customPath</definition>
+        <argsstring>() const </argsstring>
+        <name>customPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="280" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="280" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1aaefdd031052892c4136129db68596e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::setSize</definition>
+        <argsstring>(double size)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="283" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a7c641c4d4c6d29cb705d3887cfce91c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::setShape</definition>
+        <argsstring>(ScatterShape shape)</argsstring>
+        <name>setShape</name>
+        <param>
+          <type><ref refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" kindref="member">ScatterShape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a761f1f229cc0ca4703e1e2b89f6dd1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::setPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="285" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a74d692aaeb8d4b36d6f7d510e44264b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::setBrush</definition>
+        <argsstring>(const QBrush &amp;brush)</argsstring>
+        <name>setBrush</name>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a5fb611d46acfac520d7b89a1c71d9246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::setPixmap</definition>
+        <argsstring>(const QPixmap &amp;pixmap)</argsstring>
+        <name>setPixmap</name>
+        <param>
+          <type>const QPixmap &amp;</type>
+          <declname>pixmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a96a3e949f90b2afe5677ca9412a12a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::setCustomPath</definition>
+        <argsstring>(const QPainterPath &amp;customPath)</argsstring>
+        <name>setCustomPath</name>
+        <param>
+          <type>const QPainterPath &amp;</type>
+          <declname>customPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1aa3861281108d0adbeb291c820ea3925c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPScatterStyle::isNone</definition>
+        <argsstring>() const </argsstring>
+        <name>isNone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="291" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="291" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a7f1385a8d5e4f349a6b8030723fbd0f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPScatterStyle::isPenDefined</definition>
+        <argsstring>() const </argsstring>
+        <name>isPenDefined</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="292" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="292" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a81817dfd404635f211e6ff2a04657d36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::applyTo</definition>
+        <argsstring>(QCPPainter *painter, const QPen &amp;defaultPen) const </argsstring>
+        <name>applyTo</name>
+        <param>
+          <type><ref refid="classQCPPainter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>defaultPen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="293" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1a992d531ac471ec2b29bdec6aeb400a06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::drawShape</definition>
+        <argsstring>(QCPPainter *painter, QPointF pos) const </argsstring>
+        <name>drawShape</name>
+        <param>
+          <type><ref refid="classQCPPainter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>QPointF</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPScatterStyle_1ae76811ac9f70ebf7a2b4c759853e6ed8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPScatterStyle::drawShape</definition>
+        <argsstring>(QCPPainter *painter, double x, double y) const </argsstring>
+        <name>drawShape</name>
+        <param>
+          <type><ref refid="classQCPPainter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="295" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="235" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="234" bodyend="308"/>
+    <listofallmembers>
+      <member refid="classQCPScatterStyle_1a81817dfd404635f211e6ff2a04657d36" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>applyTo</name></member>
+      <member refid="classQCPScatterStyle_1a46bf481d84bfa31b287dd43a3bf86d37" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>brush</name></member>
+      <member refid="classQCPScatterStyle_1a4dd4998dfb0d6889205668a06c790328" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>customPath</name></member>
+      <member refid="classQCPScatterStyle_1a992d531ac471ec2b29bdec6aeb400a06" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>drawShape</name></member>
+      <member refid="classQCPScatterStyle_1ae76811ac9f70ebf7a2b4c759853e6ed8" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>drawShape</name></member>
+      <member refid="classQCPScatterStyle_1aa3861281108d0adbeb291c820ea3925c" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>isNone</name></member>
+      <member refid="classQCPScatterStyle_1a7f1385a8d5e4f349a6b8030723fbd0f7" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>isPenDefined</name></member>
+      <member refid="classQCPScatterStyle_1a1b9c6ab10aebcaf236f1f45d1d6d64d1" prot="protected" virt="non-virtual"><scope>QCPScatterStyle</scope><name>mBrush</name></member>
+      <member refid="classQCPScatterStyle_1a813cb074744dc5a2f59cc99d6a10c6f0" prot="protected" virt="non-virtual"><scope>QCPScatterStyle</scope><name>mCustomPath</name></member>
+      <member refid="classQCPScatterStyle_1a0f6a85e6d1e3ae1ca1b6efb4d4cdfe17" prot="protected" virt="non-virtual"><scope>QCPScatterStyle</scope><name>mPen</name></member>
+      <member refid="classQCPScatterStyle_1a84ef5aa591ddba07b440f597e1669e78" prot="protected" virt="non-virtual"><scope>QCPScatterStyle</scope><name>mPenDefined</name></member>
+      <member refid="classQCPScatterStyle_1a7697346c89b19d4cd1d8dd33319ec9e3" prot="protected" virt="non-virtual"><scope>QCPScatterStyle</scope><name>mPixmap</name></member>
+      <member refid="classQCPScatterStyle_1af1b327f35f107ed108290187bbc8c7c6" prot="protected" virt="non-virtual"><scope>QCPScatterStyle</scope><name>mShape</name></member>
+      <member refid="classQCPScatterStyle_1a757da98671eb06b221979373ac2cec91" prot="protected" virt="non-virtual"><scope>QCPScatterStyle</scope><name>mSize</name></member>
+      <member refid="classQCPScatterStyle_1a3c24c3bf37b561b4807aed9f1418ab58" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>pen</name></member>
+      <member refid="classQCPScatterStyle_1a9bab44cc41fcd585621a4b3e0e48231b" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>pixmap</name></member>
+      <member refid="classQCPScatterStyle_1a8836018d9ad83ccd8870de8315c1be73" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>QCPScatterStyle</name></member>
+      <member refid="classQCPScatterStyle_1a003d92f74f4561eda111862eadd62f28" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>QCPScatterStyle</name></member>
+      <member refid="classQCPScatterStyle_1afa059da858c864c7e05871dc602d7eab" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>QCPScatterStyle</name></member>
+      <member refid="classQCPScatterStyle_1a6e1b64f12cac7f07af180ae4316fd38d" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>QCPScatterStyle</name></member>
+      <member refid="classQCPScatterStyle_1a85acc4941d7e5c9bca5fa51377a77f49" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>QCPScatterStyle</name></member>
+      <member refid="classQCPScatterStyle_1a63962094587a4c2258435aa7933996cc" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>QCPScatterStyle</name></member>
+      <member refid="classQCPScatterStyle_1a879c30647683b3cfbde2afecea815e6f" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>QCPScatterStyle</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ScatterShape</name></member>
+      <member refid="classQCPScatterStyle_1a74d692aaeb8d4b36d6f7d510e44264b1" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>setBrush</name></member>
+      <member refid="classQCPScatterStyle_1a96a3e949f90b2afe5677ca9412a12a1e" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>setCustomPath</name></member>
+      <member refid="classQCPScatterStyle_1a761f1f229cc0ca4703e1e2b89f6dd1ba" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>setPen</name></member>
+      <member refid="classQCPScatterStyle_1a5fb611d46acfac520d7b89a1c71d9246" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>setPixmap</name></member>
+      <member refid="classQCPScatterStyle_1a7c641c4d4c6d29cb705d3887cfce91c1" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>setShape</name></member>
+      <member refid="classQCPScatterStyle_1aaefdd031052892c4136129db68596e0f" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>setSize</name></member>
+      <member refid="classQCPScatterStyle_1a4462a25ef17769631f4e0aa81dadca4b" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>shape</name></member>
+      <member refid="classQCPScatterStyle_1a1973ee650368f1c5f55507b78473f634" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>size</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a7c92a110880d0ef2170dff3a5b4f7779" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssCircle</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a9eacd60f059dc3ef71bf249f515a6fe4" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssCross</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a524613ba5d1c4eaa1541d74cf339d283" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssCrossCircle</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a7081310936c200c6c78e34c172f72d07" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssCrossSquare</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a15d9bcfd9de94edda949006529f9219d" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssCustom</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a4fc5929df1b2dad0a3cb2ef2c8b6e633" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssDiamond</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a281fe1434696dcbab3aa6b9ccfbb09e9" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssDisc</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a06e15a735b79093a1d999c0374fa3aa1" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssDot</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349abd144c291ca274f77053ec68cab6c022" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssNone</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349ada3b2988ece38c121922a4b5007eb08d" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssPeace</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a8718b849ca7c307b07b8e091efb0c31e" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssPixmap</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a2d7f1d3c1a148b9d9d17f2fd9cae5eb7" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssPlus</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a6fa151d01f1694c9ff9922da686dc535" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssPlusCircle</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a5aa8e9db545e5404482fec774768ee25" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssPlusSquare</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a279e48703ddc9f1cf4a61d3e2817ab3c" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssSquare</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a6047a2d64e41f1d6ce54445d595d442f" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssStar</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a74a8d4eff1d97b57c53a60d0003453c3" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssTriangle</name></member>
+      <member refid="classQCPScatterStyle_1adb31525af6b680e6f1b7472e43859349a6156274d21d8b4115197567d3ea2d9a8" prot="public" virt="non-virtual"><scope>QCPScatterStyle</scope><name>ssTriangleInverted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

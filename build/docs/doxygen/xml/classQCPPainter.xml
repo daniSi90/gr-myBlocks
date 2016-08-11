@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classQCPPainter" kind="class" prot="public">
+    <compoundname>QCPPainter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QPainter</basecompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156d" prot="public" static="no">
+        <name>PainterMode</name>
+        <enumvalue id="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45" prot="public">
+          <name>pmDefault</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para><computeroutput>0x00</computeroutput> Default mode for painting on screen devices </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab" prot="public">
+          <name>pmVectorized</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para><computeroutput>0x01</computeroutput> Mode for vectorized painting (e.g. PDF export). For example, this prevents some antialiasing fixes. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0" prot="public">
+          <name>pmNoCaching</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para><computeroutput>0x02</computeroutput> Mode for all sorts of exports (e.g. PNG, PDF,...). For example, this prevents using cached pixmap labels </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" prot="public">
+          <name>pmNonCosmetic</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para><computeroutput>0x04</computeroutput> Turns pen widths 0 to 1, i.e. disables cosmetic pens. (A cosmetic pen is always drawn with width 1 pixel in the vector image/pdf viewer, independent of zoom.) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines special modes the painter can operate in. They disable or enable certain subsets of features/fixes/workarounds, depending on whether they are wanted on the respective output device. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="320" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="320" bodyend="324"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQCPPainter_1af5d1d6e5df0adbc7de5633250fb3396c" prot="protected" static="no" mutable="no">
+        <type>PainterModes</type>
+        <definition>PainterModes QCPPainter::mModes</definition>
+        <argsstring></argsstring>
+        <name>mModes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="356" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPPainter_1a7055085da176aee0f6b23298f1003d08" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPPainter::mIsAntialiasing</definition>
+        <argsstring></argsstring>
+        <name>mIsAntialiasing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="357" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQCPPainter_1a0189e641bbf7dc31ac15aef7b36501fa" prot="protected" static="no" mutable="no">
+        <type>QStack&lt; bool &gt;</type>
+        <definition>QStack&lt;bool&gt; QCPPainter::mAntialiasingStack</definition>
+        <argsstring></argsstring>
+        <name>mAntialiasingStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="360" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQCPPainter_1a3c52cb0f43f34573d29bea487da28fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPPainter::QCPPainter</definition>
+        <argsstring>()</argsstring>
+        <name>QCPPainter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1ae58dbb1795ddc4351ab324dc9898aa22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPPainter::QCPPainter</definition>
+        <argsstring>(QPaintDevice *device)</argsstring>
+        <name>QCPPainter</name>
+        <param>
+          <type>QPaintDevice *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1aa8491da26c0bf7704a93e2dcbb0c5ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPPainter::~QCPPainter</definition>
+        <argsstring>()</argsstring>
+        <name>~QCPPainter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="330" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a13370d7996315a7150be2fc868da3d4a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPPainter::antialiasing</definition>
+        <argsstring>() const </argsstring>
+        <name>antialiasing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="333" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="333" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a99b89eaf5363faaa1e1e6162856f436c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>PainterModes</type>
+        <definition>PainterModes QCPPainter::modes</definition>
+        <argsstring>() const </argsstring>
+        <name>modes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="334" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="334" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1aaba1deb9188244d9ea65b035112b4d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setAntialiasing</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setAntialiasing</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1af6b1f7d2bbc548b10aa55d8b6ad49577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setMode</definition>
+        <argsstring>(PainterMode mode, bool enabled=true)</argsstring>
+        <name>setMode</name>
+        <param>
+          <type><ref refid="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156d" kindref="member">PainterMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a5fac93adc29c7c4dea9f3e171e9e635e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setModes</definition>
+        <argsstring>(PainterModes modes)</argsstring>
+        <name>setModes</name>
+        <param>
+          <type>PainterModes</type>
+          <declname>modes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="339" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a0a41146ccd619dceab6e25ec7b46b044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPPainter::begin</definition>
+        <argsstring>(QPaintDevice *device)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>QPaintDevice *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1af9c7a4cd1791403901f8c5b82a150195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a5c4d88f21564e156e88ef807f7cf0003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setPen</definition>
+        <argsstring>(const QColor &amp;color)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="344" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a25e76095aae41da0d08035060e5f81ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setPen</definition>
+        <argsstring>(Qt::PenStyle penStyle)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>Qt::PenStyle</type>
+          <declname>penStyle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a0b4b1b9bd495e182c731774dc800e6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::drawLine</definition>
+        <argsstring>(const QLineF &amp;line)</argsstring>
+        <name>drawLine</name>
+        <param>
+          <type>const QLineF &amp;</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1ad1638db27929491b3f1beb74d6cbad5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::drawLine</definition>
+        <argsstring>(const QPointF &amp;p1, const QPointF &amp;p2)</argsstring>
+        <name>drawLine</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="347" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="347" bodyend="347"/>
+        <references refid="classQCPPainter_1ad1638db27929491b3f1beb74d6cbad5e" compoundref="qcustomplot_8h" startline="347" endline="347">drawLine</references>
+        <referencedby refid="classQCPPainter_1ad1638db27929491b3f1beb74d6cbad5e" compoundref="qcustomplot_8h" startline="347" endline="347">drawLine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a8fd6821ee6fecbfa04444c9062912abd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::save</definition>
+        <argsstring>()</argsstring>
+        <name>save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="348" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a64908e6298d5bbd83457dc987cc3a022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::restore</definition>
+        <argsstring>()</argsstring>
+        <name>restore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQCPPainter_1a7e63fbcf47e35c6f2ecd11b8fef7c7d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::makeNonCosmetic</definition>
+        <argsstring>()</argsstring>
+        <name>makeNonCosmetic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="352" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="835">
+        <label>QCPPainter</label>
+        <link refid="classQCPPainter"/>
+        <childnode refid="836" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="836">
+        <label>QPainter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="837">
+        <label>QCPPainter</label>
+        <link refid="classQCPPainter"/>
+        <childnode refid="838" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="838">
+        <label>QPainter</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" line="313" column="1" bodyfile="/home/ubuntu/projects/gr-myBlocks/lib/qcustomplot.h" bodystart="312" bodyend="361"/>
+    <listofallmembers>
+      <member refid="classQCPPainter_1a13370d7996315a7150be2fc868da3d4a" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>antialiasing</name></member>
+      <member refid="classQCPPainter_1a0a41146ccd619dceab6e25ec7b46b044" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>begin</name></member>
+      <member refid="classQCPPainter_1a0b4b1b9bd495e182c731774dc800e6e0" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>drawLine</name></member>
+      <member refid="classQCPPainter_1ad1638db27929491b3f1beb74d6cbad5e" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>drawLine</name></member>
+      <member refid="classQCPPainter_1a7e63fbcf47e35c6f2ecd11b8fef7c7d8" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>makeNonCosmetic</name></member>
+      <member refid="classQCPPainter_1a0189e641bbf7dc31ac15aef7b36501fa" prot="protected" virt="non-virtual"><scope>QCPPainter</scope><name>mAntialiasingStack</name></member>
+      <member refid="classQCPPainter_1a7055085da176aee0f6b23298f1003d08" prot="protected" virt="non-virtual"><scope>QCPPainter</scope><name>mIsAntialiasing</name></member>
+      <member refid="classQCPPainter_1af5d1d6e5df0adbc7de5633250fb3396c" prot="protected" virt="non-virtual"><scope>QCPPainter</scope><name>mModes</name></member>
+      <member refid="classQCPPainter_1a99b89eaf5363faaa1e1e6162856f436c" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>modes</name></member>
+      <member refid="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156d" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>PainterMode</name></member>
+      <member refid="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmDefault</name></member>
+      <member refid="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmNoCaching</name></member>
+      <member refid="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmNonCosmetic</name></member>
+      <member refid="classQCPPainter_1a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmVectorized</name></member>
+      <member refid="classQCPPainter_1a3c52cb0f43f34573d29bea487da28fe8" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>QCPPainter</name></member>
+      <member refid="classQCPPainter_1ae58dbb1795ddc4351ab324dc9898aa22" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>QCPPainter</name></member>
+      <member refid="classQCPPainter_1a64908e6298d5bbd83457dc987cc3a022" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>restore</name></member>
+      <member refid="classQCPPainter_1a8fd6821ee6fecbfa04444c9062912abd" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>save</name></member>
+      <member refid="classQCPPainter_1aaba1deb9188244d9ea65b035112b4d05" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setAntialiasing</name></member>
+      <member refid="classQCPPainter_1af6b1f7d2bbc548b10aa55d8b6ad49577" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setMode</name></member>
+      <member refid="classQCPPainter_1a5fac93adc29c7c4dea9f3e171e9e635e" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setModes</name></member>
+      <member refid="classQCPPainter_1af9c7a4cd1791403901f8c5b82a150195" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setPen</name></member>
+      <member refid="classQCPPainter_1a5c4d88f21564e156e88ef807f7cf0003" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setPen</name></member>
+      <member refid="classQCPPainter_1a25e76095aae41da0d08035060e5f81ca" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setPen</name></member>
+      <member refid="classQCPPainter_1aa8491da26c0bf7704a93e2dcbb0c5ba1" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>~QCPPainter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
