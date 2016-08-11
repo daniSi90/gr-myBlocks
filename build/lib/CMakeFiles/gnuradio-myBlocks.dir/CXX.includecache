@@ -16,6 +16,10 @@ gnuradio/sync_block.h
 gnuradio/attributes.h
 -
 
+/home/ubuntu/projects/gr-myBlocks/build/lib/moc_spectrogram_plot.cxx
+../../lib/spectrogram_plot.h
+/home/ubuntu/projects/gr-myBlocks/lib/spectrogram_plot.h
+
 /home/ubuntu/projects/gr-myBlocks/lib/aoa_spectrum_sink_impl.cc
 config.h
 /home/ubuntu/projects/gr-myBlocks/lib/config.h
@@ -33,6 +37,14 @@ myBlocks/aoa_spectrum_sink.h
 -
 spectrogram_plot.h
 /home/ubuntu/projects/gr-myBlocks/lib/spectrogram_plot.h
+
+/home/ubuntu/projects/gr-myBlocks/lib/spectrogram_plot.cc
+spectrogram_plot.h
+/home/ubuntu/projects/gr-myBlocks/lib/spectrogram_plot.h
+iostream
+-
+stdexcept
+-
 
 /home/ubuntu/projects/gr-myBlocks/lib/spectrogram_plot.h
 complex

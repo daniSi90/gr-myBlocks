@@ -1149,7 +1149,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libp
 //Details about finding Qt4
 FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/lib/x86_64-linux-gnu/qt4/bin/moc][/usr/lib/x86_64-linux-gnu/qt4/bin/rcc][/usr/include/qt4][/usr/lib/x86_64-linux-gnu][/usr/include/qt4/QtCore][/usr/lib/x86_64-linux-gnu/libQtCore.so][/usr/include/qt4/QtGui][/usr/lib/x86_64-linux-gnu/libQtGui.so][/usr/lib/x86_64-linux-gnu/qt4/bin/uic][v4.8.6(4.2.0)]
 //Details about finding Qwt
-FIND_PACKAGE_MESSAGE_DETAILS_Qwt:INTERNAL=[/usr/lib/libqwt.so][/usr/include/qwt][v(6.0.0)]
+FIND_PACKAGE_MESSAGE_DETAILS_Qwt:INTERNAL=[/usr/lib/libqwt.so][/usr/include/qwt][v(5.0.0)]
 //Details about finding SWIG
 FIND_PACKAGE_MESSAGE_DETAILS_SWIG:INTERNAL=[/usr/bin/swig2.0][/usr/share/swig2.0][v()]
 //Details about finding Threads
